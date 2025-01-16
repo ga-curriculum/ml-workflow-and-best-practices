@@ -27,7 +27,7 @@ The first and most crucial step in the Machine Learning (ML) workflow is to clea
 
 ---
 
-### Key Elements of Problem Definition:
+### 1.1 Key Elements of Problem Definition:
 
 1. **Understand the Business or Research Objective**:
    - Clearly articulate what the project aims to achieve.
@@ -69,7 +69,7 @@ The first and most crucial step in the Machine Learning (ML) workflow is to clea
 
 ---
 
-### Questions to Ask During Problem Definition:
+### 1.2 Questions to Ask During Problem Definition:
 - What is the problem we are solving, and why is it important?
 - What is the desired outcome or impact of the solution?
 - What data is required to solve the problem, and is it available?
@@ -78,7 +78,7 @@ The first and most crucial step in the Machine Learning (ML) workflow is to clea
 
 ---
 
-### Example: Customer Churn Prediction
+### 1.3 Example: Customer Churn Prediction
 - **Objective**: Reduce customer churn by identifying customers likely to leave.
 - **Type of Problem**: Classification (binary: churn vs. no churn).
 - **Output**: A probability score for each customer indicating the likelihood of churn.
@@ -87,7 +87,7 @@ The first and most crucial step in the Machine Learning (ML) workflow is to clea
 
 ---
 
-### Importance of Proper Problem Definition:
+### 1.4 Importance of Proper Problem Definition:
 - **Focus and Clarity**: Ensures all stakeholders have a shared understanding of the objective.
 - **Avoid Scope Creep**: Prevents the project from expanding beyond its initial purpose.
 - **Resource Optimization**: Helps allocate resources effectively, avoiding unnecessary costs.
