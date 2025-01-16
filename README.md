@@ -25,9 +25,10 @@ tktk Write a short but descriptive summary of the content in this module.
 
 ### Prerequisites
 
-- tktk
-- tktk
-- tktk
+Basic Understanding of Machine Learning
+Familiarity with concepts like supervised and unsupervised learning.
+Understanding of fundamental ML models (e.g., linear regression, decision trees).
+
 
 ### Starter code
 
