@@ -69,7 +69,7 @@ The first and most crucial step in the Machine Learning (ML) workflow is to clea
 
 ---
 
-### 1.2 Questions to Ask During Problem Definition:
+### 1.2 Questions to Ask During Problem Definition
 - What is the problem we are solving, and why is it important?
 - What is the desired outcome or impact of the solution?
 - What data is required to solve the problem, and is it available?
@@ -87,7 +87,7 @@ The first and most crucial step in the Machine Learning (ML) workflow is to clea
 
 ---
 
-### 1.4 Importance of Proper Problem Definition:
+### 1.4 Importance of Proper Problem Definition
 - **Focus and Clarity**: Ensures all stakeholders have a shared understanding of the objective.
 - **Avoid Scope Creep**: Prevents the project from expanding beyond its initial purpose.
 - **Resource Optimization**: Helps allocate resources effectively, avoiding unnecessary costs.
