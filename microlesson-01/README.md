@@ -23,9 +23,6 @@ The ML workflow serves as a roadmap for both beginners and professionals, helpin
 # Key Steps in the Machine Learning Workflow
 
 ## 1. **Problem Definition**
- ## 1. **Problem Definition**
-
-### Objective:
 The first and most crucial step in the Machine Learning (ML) workflow is to clearly define the problem you are trying to solve. A well-defined problem sets the direction for the entire workflow and ensures that efforts are focused and aligned with the desired outcome. Without this step, the project risks wasting time and resources on irrelevant or poorly scoped tasks.
 
 ---
