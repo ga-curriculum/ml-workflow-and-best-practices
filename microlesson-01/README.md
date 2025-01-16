@@ -160,12 +160,6 @@ The data collection phase focuses on gathering the raw data required to solve th
 
 ---
 
-### 2.4 Tools for Data Collection:
-- **For Web Scraping**: Beautiful Soup, Scrapy, Selenium.
-- **For Public Datasets**: Kaggle, UCI Repository, OpenML.
-
----
-
 Data collection is a foundational step in the ML workflow, and the quality of this step directly impacts the project's overall success. Ensuring relevance, accuracy, and completeness of the data is critical to building reliable and effective machine learning models.
 
 
