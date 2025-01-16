@@ -49,9 +49,6 @@ The first and most crucial step in the Machine Learning (ML) workflow is to clea
    - Examples of metrics:
      - **Classification Problems**: Accuracy, Precision, Recall, F1-score.
      - **Regression Problems**: Mean Squared Error (MSE), Mean Absolute Error (MAE).
-     - **Clustering Problems**: Silhouette score, Davies-Bouldin Index.
-   - Example:
-     - Success Metric: Achieving 95% accuracy in spam detection.
 
 4. **Understand Constraints and Requirements**:
    - Consider factors like:
