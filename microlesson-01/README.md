@@ -163,9 +163,6 @@ The data collection phase focuses on gathering the raw data required to solve th
 Data collection is a foundational step in the ML workflow, and the quality of this step directly impacts the project's overall success. Ensuring relevance, accuracy, and completeness of the data is critical to building reliable and effective machine learning models.
 
 
-## 3. **Data Preprocessing**
-   - Clean and transform raw data to make it suitable for analysis.
-   - Handle missing values, normalize data, and perform feature engineering.
    ## 3. **Data Preprocessing**
 
 Data preprocessing involves preparing raw data for analysis and modeling. This step ensures that the data is clean, consistent, and structured in a way that enhances the performance of machine learning models. Since raw data often contains noise, inconsistencies, or irrelevant information, preprocessing is a critical step in the ML workflow.
