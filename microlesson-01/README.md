@@ -3,7 +3,14 @@
   <span class="subhead">  </span>
 </h1>
 
-**Learning objective:** By the end of this lesson, students will be able to tktk
+**Learning objective:** 
+
+By the end of this lesson, participants will be able to:
+
+1. Understand the concept and significance of the ML workflow.  
+2. Articulate ML problems and align them with specific objectives.  
+3. Understand how participants can apply data collection, preprocessing, and exploratory analysis techniques.  
+4. Understand how participants can evaluate models using train-test splits and cross-validation.  
 
 # Introduction to Machine Learning Workflow
 
