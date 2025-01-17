@@ -110,9 +110,7 @@ The data collection phase focuses on gathering the raw data required to solve th
 
  **2.1.2 Data Gathering**:
    - Extract data from identified sources.
-   - Techniques:
-     - SQL queries for databases.
-     - Scraping tools for web data 
+   
 
 **2.1.3 Validate Data Quality**:
    - Ensure the collected data meets the necessary standards.
