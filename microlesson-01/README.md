@@ -132,13 +132,11 @@ The data collection phase focuses on gathering the raw data required to solve th
 ### 2.2 Challenges in Data Collection
 1. **Data Availability**:
    - Limited access to required data or insufficient historical records.
-2. **Data Privacy and Compliance**:
-   - Adhering to regulations like GDPR or HIPAA.
-3. **Data Quality Issues**:
+2. **Data Quality Issues**:
    - Incomplete, inconsistent, or noisy data.
-4. **Volume and Complexity**:
+3. **Volume and Complexity**:
    - Handling large-scale data or diverse formats (e.g., text, images, videos).
-5. **Cost**:
+4. **Cost**:
    - Licensing fees or expenses associated with data acquisition.
 
 ---
