@@ -24,7 +24,7 @@ The **Machine Learning (ML) workflow** is a systematic approach that transforms 
 5. **Performance Assurance**: Ensures that models are robust, accurate, and reliable.
 
 The ML workflow serves as a roadmap for both beginners and professionals, helping them navigate the complexities of data, algorithms, and deployment strategies. The workflow is iterative, meaning that improvements and adjustments are continuously made to achieve the best results.
-
+.
 ### **Discussion: Understanding the Importance of the ML Workflow**
 
 - **Objective:** Reflect on the key components and significance of the ML workflow in real-world applications.
