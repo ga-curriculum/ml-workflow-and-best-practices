@@ -7,10 +7,10 @@
 
 By the end of this lesson, participants will be able to:
 
-1. Understand the concept and significance of the ML workflow.  
-2. Articulate ML problems and align them with specific objectives.  
-3. Understand how participants can apply data collection, preprocessing, and exploratory analysis techniques.  
-4. Understand how participants can evaluate models using train-test splits and cross-validation.  
+- **Define** the concept and significance of the ML workflow, identifying its key components and their interrelationships.
+- **Formulate** machine learning problems by aligning them with specific business objectives and goals.
+- **Apply** data collection, preprocessing, and exploratory analysis techniques to prepare datasets for modeling.
+- **Evaluate** models effectively using train-test splits and cross-validation, assessing their performance and reliability. 
 
 # Introduction to Machine Learning Workflow
 
@@ -24,6 +24,17 @@ The **Machine Learning (ML) workflow** is a systematic approach that transforms 
 5. **Performance Assurance**: Ensures that models are robust, accurate, and reliable.
 
 The ML workflow serves as a roadmap for both beginners and professionals, helping them navigate the complexities of data, algorithms, and deployment strategies. The workflow is iterative, meaning that improvements and adjustments are continuously made to achieve the best results.
+
+### **Discussion: Understanding the Importance of the ML Workflow**
+
+- **Objective:** Reflect on the key components and significance of the ML workflow in real-world applications.
+
+- **Discussion Prompts:**
+  - Why is having a well-defined workflow important for developing machine learning models? 
+  - Can you think of examples where a lack of structure in the workflow might lead to inefficiencies or poor outcomes?
+  - How does the iterative nature of the ML workflow contribute to model performance and real-world applicability?
+  - In what ways can reproducibility and scalability impact the success of ML projects within organizations?
+  - Discuss how aligning the workflow with defined objectives can prevent misaligned solutions or wasted efforts.
 
 ---
 
@@ -74,28 +85,32 @@ The first and most crucial step in the Machine Learning (ML) workflow is to clea
 ---
 
 ### 1.2 Questions to Ask During Problem Definition
-- What is the problem we are solving, and why is it important?
-- What is the desired outcome or impact of the solution?
-- What data is required to solve the problem, and is it available?
-- What are the constraints (time, budget, computational resources)?
-- How will we measure success?
+
+🔍 **What is the problem we are solving, and why is it important?**  
+🎯 **What is the desired outcome or impact of the solution?**  
+📊 **What data is required to solve the problem, and is it available?**  
+⏱️ **What are the constraints (time, budget, computational resources)?**  
+📈 **How will we measure success?**
 
 ---
 
 ### 1.3 Example: Customer Churn Prediction
-- **Objective**: Reduce customer churn by identifying customers likely to leave.
-- **Type of Problem**: Classification (binary: churn vs. no churn).
-- **Output**: A probability score for each customer indicating the likelihood of churn.
-- **Success Metric**: Achieve a minimum precision of 90% to minimize false positives.
-- **Constraints**: The model must process predictions within 1 second for real-time applications.
+
+🎯 **Objective**: Reduce customer churn by identifying customers likely to leave.  
+📂 **Type of Problem**: Classification (binary: churn vs. no churn).  
+🔢 **Output**: A probability score for each customer indicating the likelihood of churn.  
+📏 **Success Metric**: Achieve a minimum precision of 90% to minimize false positives.  
+⏳ **Constraints**: The model must process predictions within 1 second for real-time applications.
 
 ---
 
 ### 1.4 Importance of Proper Problem Definition
-- **Focus and Clarity**: Ensures all stakeholders have a shared understanding of the objective.
-- **Avoid Scope Creep**: Prevents the project from expanding beyond its initial purpose.
-- **Resource Optimization**: Helps allocate resources effectively, avoiding unnecessary costs.
-- **Model Effectiveness**: Aligns the solution with the actual needs and expectations.
+
+🧠 **Focus and Clarity**: Ensures all stakeholders have a shared understanding of the objective.  
+🚀 **Avoid Scope Creep**: Prevents the project from expanding beyond its initial purpose.  
+💡 **Resource Optimization**: Helps allocate resources effectively, avoiding unnecessary costs.  
+✅ **Model Effectiveness**: Aligns the solution with the actual needs and expectations.
+
 
 Defining the problem accurately is the foundation of a successful ML project and greatly influences the subsequent steps in the workflow.
 
@@ -109,61 +124,96 @@ The data collection phase focuses on gathering the raw data required to solve th
 
 
 ### 2.1 Steps in Data Collection:
- **2.1.1 Identify Data Requirements**:
-   - Determine what data is needed to address the problem.
-   - Consider features, granularity, and historical depth.
-   - Example: For a customer churn model, collect customer demographics, transaction history, and interaction logs.
 
+| **Step**                   | **Description**                                                                                 | **Examples/Details**                                                                                 |
+|----------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
+| **2.1.1 Identify Data Requirements** | Determine what data is needed to address the problem.                                           | Consider features, granularity, and historical depth. Example: For a customer churn model, collect customer demographics, transaction history, and interaction logs. |
+| **2.1.2 Data Gathering**            | Extract data from identified sources.                                                            | Sources could include databases, APIs, or third-party providers.                                         |
+| **2.1.3 Validate Data Quality**     | Ensure the collected data meets the necessary standards.                                          | Check for missing values, inconsistent formats, outliers, or noise.                                      |
+| **2.1.4 Data Consolidation**        | Combine data from multiple sources if needed.                                                    | Example: Merging sales data with customer feedback data.                                                 |
+| **2.1.5 Document the Data Collection Process** | Maintain records of data sources, extraction methods, and any preprocessing steps.                  | Ensures transparency and reproducibility of the data collection process.                                  |
 
- **2.1.2 Data Gathering**:
-   - Extract data from identified sources.
-   
-
-**2.1.3 Validate Data Quality**:
-   - Ensure the collected data meets the necessary standards.
-   - Check for issues like:
-     - Missing values.
-     - Inconsistent formats.
-     - Outliers or noise.
-
- **2.1.4 Data Consolidation**
-   - Combine data from multiple sources if needed.
-   - Example: Merging sales data with customer feedback data.
-
- **2.1.5 Document the Data Collection Process**
-   - Maintain records of data sources, extraction methods, and any preprocessing steps.
-   - Ensures transparency and reproducibility.
 
 ---
 
 ### 2.2 Challenges in Data Collection
-1. **Data Availability**:
+
+🔍 **Data Availability**  
    - Limited access to required data or insufficient historical records.
-2. **Data Quality Issues**:
+
+⚠️ **Data Quality Issues**  
    - Incomplete, inconsistent, or noisy data.
-3. **Volume and Complexity**:
+
+📊 **Volume and Complexity**  
    - Handling large-scale data or diverse formats (e.g., text, images, videos).
-4. **Cost**:
+
+💰 **Cost**  
    - Licensing fees or expenses associated with data acquisition.
 
 ---
 
-### 2.3 Best Practices for Data Collection:
-1. **Prioritize Relevant Data**:
+### 2.3 Best Practices for Data Collection
+
+🎯 **Prioritize Relevant Data**  
    - Focus on data that directly impacts the problem's solution.
-2. **Ensure Data Diversity**:
+
+🌍 **Ensure Data Diversity**  
    - Collect data that represents different scenarios to avoid bias.
-3. **Automate Data Collection**:
+
+🤖 **Automate Data Collection**  
    - Use scripts, APIs, or tools to streamline repetitive data extraction tasks.
-4. **Ensure Data Security**:
+
+🔒 **Ensure Data Security**  
    - Protect sensitive information using encryption and access controls.
-5. **Monitor and Update**:
+
+⏳ **Monitor and Update**  
    - Regularly collect updated data to maintain model performance over time.
+
 
 ---
 
 Data collection is a foundational step in the ML workflow, and the quality of this step directly impacts the project's overall success. Ensuring relevance, accuracy, and completeness of the data is critical to building reliable and effective machine learning models.
 
+### **Activity: Evaluating and Improving Data Collection**
+
+#### **Objective**
+Test your understanding of the data collection process, challenges, and best practices by analyzing a hypothetical scenario and making recommendations.
+
+---
+
+#### **Scenario**
+You are tasked with building a machine learning model to predict the likelihood of patients developing a certain medical condition. The initial dataset contains:
+
+1. Patient demographics (age, gender, etc.).  
+2. Medical history and previous diagnoses.  
+3. Lifestyle information (diet, exercise habits).  
+4. Lab test results.
+
+However, the data has several issues:
+- Missing values in the lab test results.
+- Inconsistent formats in the lifestyle information (e.g., "Exercise: Yes" vs. "Physical Activity: Regular").
+- Data collected only from urban hospitals, leaving rural areas unrepresented.
+- Limited historical records for patients under 18 years old.
+
+---
+
+#### **Discussion Questions**
+1. **Data Requirements**:  
+   - What additional data would improve the model's performance? Why?
+   - How can you ensure the dataset is representative of the broader population?
+
+2. **Data Quality Issues**:  
+   - What steps would you take to handle the missing lab test values and inconsistent formats?
+   - How would you address the bias introduced by the lack of data from rural areas?
+
+3. **Best Practices**:  
+   - Suggest specific actions to automate the data collection process while ensuring data security and diversity.  
+   - What steps can be implemented to monitor and update the dataset regularly?
+
+4. **Reflection**:  
+   - How does following best practices in data collection ensure the reliability and fairness of the final model?
+
+---
 
    ## 3. **Data Preprocessing**
 
@@ -173,52 +223,13 @@ Data preprocessing involves preparing raw data for analysis and modeling. This s
 
 ### 3.1 Key Steps in Data Preprocessing
 
-#### 3.1.1. **Handling Missing Data**:
-   - Missing values can distort model performance if not addressed properly.
-   - Common techniques:
-     - **Removal**: Drop rows or columns with missing data (use sparingly).
-     - **Imputation**:
-       - Mean/Median for numerical data.
-       - Mode for categorical data.
-       - Advanced techniques like K-Nearest Neighbors (KNN) or regression imputation.
-   - **Example**: Replace missing age values in a dataset with the median age.
-
----
-
-#### 3.1.2 **Removing Duplicates**:
-   - Duplicate entries can bias the model and inflate certain patterns.
-   - Remove duplicate rows to ensure data integrity.
-   - **Example**: Eliminate repeated entries in a customer transaction dataset.
-
----
-
-#### 3.1.3 **Handling Outliers**:
-   - Outliers can skew model predictions and reduce accuracy.
-   - Common techniques:
-     - **Z-score Method**: Identify values outside a threshold (e.g., ±3 standard deviations).
-     - **IQR Method**: Remove values outside the interquartile range (1.5×IQR).
-     - **Capping/Clipping**: Replace extreme values with predefined limits.
-   - **Example**: Cap unusually high salary values in a dataset to avoid skewed regression models.
-
----
-
-#### 3.1.4. **Scaling and Normalization**:
-   - Ensures that features are on the same scale to prevent models from being biased by larger-scale variables.
-   - Common techniques:
-     - **Standardization**: Rescales data to have a mean of 0 and a standard deviation of 1.
-     - **Min-Max Scaling**: Scales values to a range between 0 and 1.
-     - **Log Transformation**: Reduces skewness in data.
-   - **Example**: Normalize customer income and age for better feature comparability.
-
----
-
-#### 3.1.5. **Encoding Categorical Variables**:
-   - Machine learning models often require numerical data, so categorical variables must be encoded.
-   - Common techniques:
-     - **Label Encoding**: Converts categories into integers.
-     - **One-Hot Encoding**: Creates binary columns for each category.
-     - **Ordinal Encoding**: Assigns ordered numerical values based on category ranking.
-   - **Example**: Convert "Low," "Medium," and "High" risk levels into 0, 1, and 2.
+| **Preprocessing Step**          | **Description**                                                                                              | **Techniques**                                                                                                 | **Example**                                                |
+|----------------------------------|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
+| **Handling Missing Data**       | Missing values can distort model performance if not addressed properly.                                       | - **Removal**: Drop rows or columns (use sparingly). <br> - **Imputation**: Mean/Median for numerical data, Mode for categorical data, advanced methods like KNN or regression. | Replace missing age values in a dataset with the median age.|
+| **Removing Duplicates**          | Duplicate entries can bias the model and inflate certain patterns.                                            | - Remove duplicate rows to ensure data integrity.                                                             | Eliminate repeated entries in a customer transaction dataset. |
+| **Handling Outliers**            | Outliers can skew model predictions and reduce accuracy.                                                     | - **Z-score Method**: Identify values outside ±3 standard deviations. <br> - **IQR Method**: Remove values outside 1.5×IQR. <br> - **Capping/Clipping**: Replace extreme values with limits. | Cap unusually high salary values to avoid skewed regression models. |
+| **Scaling and Normalization**    | Ensures features are on the same scale to prevent models from being biased by larger-scale variables.         | - **Standardization**: Mean = 0, SD = 1. <br> - **Min-Max Scaling**: Scale to range [0, 1]. <br> - **Log Transformation**: Reduces skewness. | Normalize customer income and age for better comparability. |
+| **Encoding Categorical Variables** | Converts categorical data into numerical format for machine learning models.                                 | - **Label Encoding**: Converts categories to integers. <br> - **One-Hot Encoding**: Creates binary columns for each category. <br> - **Ordinal Encoding**: Assigns ordered numerical values. | Convert "Low," "Medium," and "High" risk levels into 0, 1, and 2. |
 
 ---
 
@@ -232,9 +243,10 @@ Data preprocessing involves preparing raw data for analysis and modeling. This s
 ---
 
 ### 3.3 Best Practices for Data Preprocessing:
-1. **Understand the Data**: Perform initial exploration to identify potential issues.
-2. **Document the Process**: Keep track of all transformations for reproducibility.
-3. **Iterative Refinement**: Revisit preprocessing steps as new insights emerge during modeling.
+
+- 🕵️ **Understand the Data**: Perform initial exploration to identify potential issues.
+- 📝 **Document the Process**: Keep track of all transformations for reproducibility.
+- 🔄 **Iterative Refinement**: Revisit preprocessing steps as new insights emerge during modeling.
 
 ---
 
@@ -246,22 +258,25 @@ Exploratory Data Analysis (EDA) is the process of analyzing datasets to summariz
 ---
 
 ### 4.1 Goals of EDA:
-1. **Understand Data Distributions**:
-   - Assess the spread, central tendency, and variability of numerical data.
-   - Identify skewness, kurtosis, and statistical properties.
+### Key Steps in Exploratory Data Analysis (EDA)
 
-2. **Identify Relationships**:
-   - Explore interactions and dependencies between variables.
-   - Highlight correlations that may inform model features.
+- 🧮 **Understand Data Distributions**  
+  - Assess the spread, central tendency, and variability of numerical data.  
+  - Identify skewness, kurtosis, and statistical properties.
 
-3. **Detect Anomalies**:
-   - Spot outliers or unusual patterns that could distort model predictions.
+- 🔗 **Identify Relationships**  
+  - Explore interactions and dependencies between variables.  
+  - Highlight correlations that may inform model features.
 
-4. **Assess Data Quality**:
-   - Check for missing values, duplicates, and inconsistencies.
+- 🚨 **Detect Anomalies**  
+  - Spot outliers or unusual patterns that could distort model predictions.
 
-5. **Guide Feature Selection**:
-   - Determine which features are most relevant for the problem.
+- 🔍 **Assess Data Quality**  
+  - Check for missing values, duplicates, and inconsistencies.
+
+- 🛠️ **Guide Feature Selection**  
+  - Determine which features are most relevant for the problem.
+
 
 ---
 
@@ -364,22 +379,93 @@ Feature engineering is the process of creating, transforming, or selecting featu
 - **Insight**:
   - Customer 6 has the highest income efficiency despite not purchasing the product.
 
+### **Activity: Applying Exploratory Data Analysis**
+
+#### **Objective**
+Reinforce understanding of EDA concepts by having participants analyze a small dataset, identify patterns, and suggest improvements for feature engineering.
+
+---
+
+#### **Scenario**
+You are tasked with performing EDA on a dataset of customer information to better understand purchase behavior. The dataset includes:
+
+| CustomerID | Age | Income ($) | Purchased |
+|------------|-----|------------|-----------|
+| 1          | 25  | 40000      | Yes       |
+| 2          | 35  | 50000      | No        |
+| 3          | 45  | 60000      | Yes       |
+| 4          | 50  | 70000      | No        |
+| 5          | 23  | 35000      | Yes       |
+| 6          | 40  | 65000      | No        |
+
+---
+
+#### **Instructions**
+Analyze the dataset to answer the following questions:
+
+1. **Univariate Analysis**:  
+   - What is the mean and range of the `Age` column?  
+   - What does this tell you about the age distribution of the customers?
+
+2. **Bivariate Analysis**:  
+   - Analyze the relationship between `Income` and `Purchased`.  
+   - Are there patterns indicating how income influences purchase decisions?
+
+3. **Correlation Analysis**:  
+   - Calculate or hypothesize the correlation between `Age` and `Income`.  
+   - What does a high or low correlation suggest in this context?
+
+4. **Outlier Detection**:  
+   - Using the provided IQR method, check if there are any outliers in the `Income` column.  
+   - If outliers exist, what impact might they have on model performance?
+
+5. **Feature Engineering**:  
+   - Create a new feature, `Income per Year of Age`, for the dataset.  
+   - What insights can be derived from this new feature? How could it improve your model?
+
+---
+
+#### **Expected Outcomes**
+- Participants will calculate and interpret key statistics for the dataset.
+- Insights about relationships between variables will emerge (e.g., lower-income customers are more likely to purchase).
+- Participants will understand the importance of feature engineering and its impact on predictive models.
+
+---
+
+#### **Discussion Prompts**
+- How did EDA help you understand the underlying patterns in the dataset?  
+- What challenges did you face when identifying relationships or anomalies?  
+- How would you refine the dataset or features further before modeling?
+
+---
+
+#### **Key Takeaways**
+- EDA is critical for understanding the data and guiding preprocessing and feature selection.
+- Techniques like univariate, bivariate, and multivariate analyses uncover valuable insights.
+- Feature engineering can significantly enhance the relevance and impact of the dataset.
+
 ---
 
 ## 5 .  Bias, Variance, and Bias-Variance Tradeoff
 
-### 5.1. **Bias**
-- Bias refers to the error introduced by approximating a real-world problem with a simplified model.
-- High bias typically occurs when a model is too simple (e.g., underfitting), leading to inaccurate predictions and poor performance on both training and test data.
+### Understanding Bias, Variance, and the Bias-Variance Tradeoff
 
-### 5.2. **Variance**
-- Variance measures the sensitivity of a model to small fluctuations in the training data.
-- High variance often indicates that the model is too complex (e.g., overfitting), performing well on the training data but poorly on new, unseen data.
+#### Bias:
+➡️ Represents the error due to oversimplification of the model.  
+➡️ Common in underfitted models that fail to capture complex patterns in the data.  
+➡️ Leads to poor performance on both training and test datasets.  
 
-### 5.3. **Bias-Variance Tradeoff**
-- The bias-variance tradeoff describes the balance between these two sources of error.
-- A model with low bias and high variance (overfitting) is overly complex, while one with high bias and low variance (underfitting) is too simplistic.
-- The goal is to find the sweet spot where the model has an optimal balance of bias and variance, minimizing total error.
+#### Variance:
+⚡ Indicates the error due to the model's sensitivity to small fluctuations in training data.  
+⚡ Found in overfitted models that perform well on training data but poorly on unseen data.  
+⚡ Reflects excessive model complexity.  
+
+#### Bias-Variance Tradeoff:
+⚖️ Explains the balance between bias and variance errors.  
+⚖️ Overly complex models have low bias but high variance (overfitting).  
+⚖️ Oversimplified models have high bias but low variance (underfitting).  
+⚖️ The aim is to find the "sweet spot" where both bias and variance are minimized, achieving the lowest total error.
+
 ---
 
 
@@ -493,49 +579,61 @@ By following this process, cross-validation helps to evaluate models thoroughly 
 # Ways to Break Down Problem to determine challanges with Accuracy ,Latency ,Cost
 
 
-### 1. **Understanding the Problem**
-   - **Define the Objective**: Clearly outline the goal of the ML model (e.g., classification, regression, recommendation).
-   - **Determine Success Metrics**:
-     - Accuracy: Precision, recall, F1 score, etc.
-     - Latency: Time required to generate predictions.
-     - Cost: Computational resources, data acquisition, and maintenance expenses.
+### Addressing Key Machine Learning Challenges
 
-### 2. **Let's Understand How to Analyzing Accuracy Challenges**
-   - **Data Quality**:
-     - Are there missing values, outliers, or biases in the dataset?
-     - Is the dataset representative of the real-world use case?
-   - **Model Limitations**:
-     - Can the selected algorithm handle the complexity of the data?
-     - Are there risks of overfitting or underfitting?
-   - **Evaluation Metrics**:
-     - Do the chosen metrics align with the business goals?
+#### 🧠 Understanding the Problem:
+- **Define the Objective**:  
+  Clearly specify the ML model's goal, such as classification, regression, or recommendation.  
+- **Determine Success Metrics**:  
+  - 🎯 Accuracy: Metrics like precision, recall, and F1 score.  
+  - ⏱️ Latency: Time required to produce predictions.  
+  - 💰 Cost: Resources for computation, data acquisition, and maintenance.  
 
-### 3. **Evaluating Latency Challenges**
-   - **Prediction Speed**:
-     - Does the model need to operate in real-time or batch processing?
-   - **Complexity of the Model**:
-     - Is the model too computationally heavy for the deployment environment?
-     - Are there optimizations (e.g., quantization, pruning) that can reduce inference time?
-   - **System Integration**:
-     - Does the deployment pipeline introduce delays (e.g., API latency, network bottlenecks)?
+---
 
-### 4. **Assessing Cost Challenges**
-   - **Infrastructure Requirements**:
-     - What are the hardware and cloud resources needed for training and inference?
-   - **Model Development**:
-     - How many iterations and experiments are required to achieve acceptable accuracy?
-   - **Scalability**:
-     - Can the solution scale efficiently with increasing data or traffic?
-   - **Maintenance**:
-     - What is the expected cost of retraining and updating the model?
+#### 🔍 Analyzing Accuracy Challenges:
+- **Data Quality**:  
+  - 📉 Are there missing values, outliers, or biases in the dataset?  
+  - 🌍 Is the dataset representative of real-world scenarios?  
+- **Model Limitations**:  
+  - 🤔 Can the algorithm handle the complexity of the data?  
+  - ⚠️ Are there risks of overfitting or underfitting?  
+- **Evaluation Metrics**:  
+  - ✅ Do chosen metrics align with business objectives?  
 
-### 5. **Iterative Problem Refinement**
-   - **Trade-Off Analysis**:
-     - Identify areas where trade-offs are necessary between accuracy, latency, and cost.
-   - **Experimentation**:
-     - Test different model architectures, hyperparameters, and deployment strategies.
-   - **Feedback Loop**:
-     - Incorporate feedback from users and stakeholders to refine priorities.
+---
+
+#### ⚡ Evaluating Latency Challenges:
+- **Prediction Speed**:  
+  - ⏩ Is real-time or batch processing required?  
+- **Model Complexity**:  
+  - 🖥️ Is the model too resource-heavy for the deployment environment?  
+  - 🔧 Can optimizations like quantization or pruning improve speed?  
+- **System Integration**:  
+  - 📡 Are delays introduced by API latency or network bottlenecks?  
+
+---
+
+#### 💸 Assessing Cost Challenges:
+- **Infrastructure Requirements**:  
+  - 🔋 What hardware or cloud resources are necessary for training and inference?  
+- **Model Development**:  
+  - 🔄 How many iterations are needed to achieve acceptable accuracy?  
+- **Scalability**:  
+  - 📈 Can the solution scale with increasing data or traffic?  
+- **Maintenance**:  
+  - 🔧 What are the costs of retraining and updating the model?  
+
+---
+
+#### 🔁 Iterative Problem Refinement:
+- **Trade-Off Analysis**:  
+  - ⚖️ Balance between accuracy, latency, and cost.  
+- **Experimentation**:  
+  - 🔬 Test different architectures, hyperparameters, and deployment strategies.  
+- **Feedback Loop**:  
+  - 🗣️ Use user and stakeholder feedback to refine priorities and solutions.
+
 
 # ML Workflow and Best Practices
 
@@ -545,42 +643,18 @@ When tackling an ML problem, it's critical to evaluate potential challenges rela
 
 ---
 
-### Example: Predictive Maintenance for Industrial Equipment
-- **Challenges**:
-  - **Accuracy**: Imbalanced dataset as failures are rare, leading to a high risk of false negatives.
-  - **Latency**: Predictions must be made within seconds to trigger real-time maintenance alerts.
-  - **Cost**: Sensor data collection and processing for thousands of machines can be computationally expensive.
+| **Example**                          | **Challenges**                                                                                                   | **Proposed Solutions**                                                                                                                                           |
+|--------------------------------------|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Predictive Maintenance**           | - **Accuracy**: Imbalanced dataset as failures are rare, leading to a high risk of false negatives.             | - Use simple undersampling of the majority class to balance the dataset and improve failure detection accuracy.                                                  |
+|                                      | - **Latency**: Predictions must be made within seconds to trigger real-time maintenance alerts.                 | - Deploy lightweight models like Logistic Regression or Decision Trees for faster predictions.                                                                  |
+|                                      | - **Cost**: Sensor data collection and processing for thousands of machines can be computationally expensive.   | - Downsample data by aggregating sensor readings to reduce storage and compute costs.                                                                           |
+| **Fraud Detection**                  | - **Accuracy**: Fraudulent transactions are rare compared to legitimate ones, causing class imbalance.          | - Apply a weighted classification approach (e.g., increasing the penalty for misclassifying the minority class) to address imbalance.                           |
+|                                      | - **Latency**: Predictions must be generated within 100 milliseconds to avoid delays in transaction processing. | - Use a Random Forest model with fewer estimators to balance speed and accuracy.                                                                                |
+|                                      | - **Cost**: Managing and storing large amounts of transaction data increases costs.                             | - Pre-filter transactions with simple rule-based heuristics before applying the ML model.                                                                       |
+| **Customer Churn Prediction System** | - **Accuracy**: Imbalanced data as most customers are retained, while only a small percentage churn.            | - Use oversampling of the minority class (churned customers) by duplicating examples within the training set.                                                   |
+|                                      | - **Latency**: Predictions must fit within a weekly ETL processing window.                                      | - Train a Decision Tree or Random Forest for interpretable and moderately accurate results.                                                                      |
+|                                      | - **Cost**: Scaling storage and compute as the customer base grows.                                             | - Aggregate customer behavior data into summary statistics (e.g., average transactions) to reduce storage requirements.                                         |
 
-- **Proposed Solutions**:
-  - Use simple undersampling of the majority class to balance the dataset and improve failure detection accuracy.
-  - Deploy lightweight models like Logistic Regression or Decision Trees for faster predictions.
-  - Downsample data by aggregating sensor readings to reduce storage and compute costs.
-
----
-
-### Example: Fraud Detection in Financial Transactions
-- **Challenges**:
-  - **Accuracy**: Fraudulent transactions are rare compared to legitimate ones, causing class imbalance.
-  - **Latency**: Predictions must be generated within 100 milliseconds to avoid delays in transaction processing.
-  - **Cost**: Managing and storing large amounts of transaction data increases costs.
-
-- **Proposed Solutions**:
-  - Apply a weighted classification approach (e.g., increasing the penalty for misclassifying the minority class) to address imbalance.
-  - Use a Random Forest model with fewer estimators to balance speed and accuracy.
-  - Pre-filter transactions with simple rule-based heuristics before applying the ML model.
-
----
-
-### Example: Customer Churn Prediction System
-- **Challenges**:
-  - **Accuracy**: Imbalanced data as most customers are retained, while only a small percentage churn.
-  - **Latency**: Predictions must fit within a weekly ETL processing window.
-  - **Cost**: Scaling storage and compute as the customer base grows.
-
-- **Proposed Solutions**:
-  - Use oversampling of the minority class (churned customers) by duplicating examples within the training set.
-  - Train a Decision Tree or Random Forest for interpretable and moderately accurate results.
-  - Aggregate customer behavior data into summary statistics (e.g., average transactions) to reduce storage requirements.
 
 ---
 
