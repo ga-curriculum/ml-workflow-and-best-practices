@@ -5,7 +5,7 @@
 
 # Machine Learning Workflow and Best Practices
 
-# Table of Contents(#table-of-Contents)
+## Table of Contents(#table-of-Contents)
 
 ## [I. Introduction to Machine Learning Workflow](#i-introduction-to-machine-learning-workflow)(5 Mins)
 ### [A. Importance of the ML Workflow](#a-importance-of-the-ml-workflow)
