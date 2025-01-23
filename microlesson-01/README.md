@@ -7,7 +7,7 @@
 
 ## [Table of Contents](#table-of-Contents)
 
-##[Learning Objectives](#learning-Objectives)
+## [Learning Objectives](#learning-Objectives)
 
 ## [I. Introduction to Machine Learning Workflow](#i-introduction-to-machine-learning-workflow)(5 Mins)
 ### [A. Importance of the ML Workflow](#a-importance-of-the-ml-workflow)
