@@ -3,8 +3,10 @@
   <span class="subhead">  </span>
 </h1>
 
-# Table of Contents(#table-of-content)
-#[Learning Objetcives](#learning-objectives)
+# Machine Learning Workflow and Best Practices
+
+# Table of Contents
+
 ## [I. Introduction to Machine Learning Workflow](#i-introduction-to-machine-learning-workflow)
 ### [A. Importance of the ML Workflow](#a-importance-of-the-ml-workflow)
 ### [B. Discussion: Understanding the Importance of the ML Workflow](#b-discussion-understanding-the-importance-of-the-ml-workflow)
@@ -21,6 +23,7 @@
 ### [B. Challenges in Data Collection](#b-challenges-in-data-collection)
 ### [C. Best Practices for Data Collection](#c-best-practices-for-data-collection)
 ### [D. Activity: Evaluating and Improving Data Collection](#d-activity-evaluating-and-improving-data-collection)
+### [E. Discussion](#e-discussion)
 
 ## [IV. Data Preprocessing](#iv-data-preprocessing)
 ### [A. Key Steps in Data Preprocessing](#a-key-steps-in-data-preprocessing)
@@ -51,14 +54,13 @@
 ### [B. Example Illustration](#b-example-illustration)
 ### [C. Key Considerations](#c-key-considerations)
 ### [D. Advantages of Cross-Validation](#d-advantages-of-cross-validation)
+
 ## [IX. Breaking Down a Problem to Identify Challenges](#ix-breaking-down-a-problem-to-identify-challenges)
 ### [A. Addressing Key Machine Learning Challenges](#a-addressing-key-machine-learning-challenges)
 ### [B. Examples of Challenges in ML Projects](#b-examples-of-challenges-in-ml-projects)
 ### [C. Discussion: Ways to Address Challenges in Accuracy, Latency, and Cost](#c-discussion-ways-to-address-challenges-in-accuracy-latency-and-cost)
 ### [D. Activity: Proposing Solutions for Real-World ML Challenges](#d-activity-proposing-solutions-for-real-world-ml-challenges)
 ### [E. Conclusion](#e-conclusion)
-
-**Learning objective:** 
 
 By the end of this lesson, participants will be able to:
 
