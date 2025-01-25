@@ -3,82 +3,58 @@
   <span class="subhead">  </span>
 </h1>
 
+### [Table of Contents]
+
+### [Learning Objectives](#learning-objectives)
+
+### [I. Introduction to Machine Learning Workflow](#i-introduction-to-machine-learning-workflow) (5 Mins)  
+- [A. Importance of the ML Workflow](#a-importance-of-the-ml-workflow)  
+- [B. Discussion: Understanding the Importance of the ML Workflow](#b-discussion-understanding-the-importance-of-the-ml-workflow)  
+### [II. Key Steps in the Machine Learning Workflow](#ii-key-steps-in-the-machine-learning-workflow) (10 Mins)  
+- [A. Problem Definition](#a-problem-definition)  
+  - [1. Key Elements of Problem Definition](#1-key-elements-of-problem-definition)  
+  - [2. Questions to Ask During Problem Definition](#2-questions-to-ask-during-problem-definition)  
+  - [3. Example: Customer Churn Prediction](#3-example-customer-churn-prediction)  
+  - [4. Importance of Proper Problem Definition](#4-importance-of-proper-problem-definition)  
+### [III. Data Collection](#iii-data-collection) (5 Mins)  
+- [A. Steps in Data Collection](#a-steps-in-data-collection)  
+- [B. Challenges in Data Collection](#b-challenges-in-data-collection)  
+- [C. Best Practices for Data Collection](#c-best-practices-for-data-collection)  
+- [D. Activity: Evaluating and Improving Data Collection](#d-activity-evaluating-and-improving-data-collection)  
+- [E. Discussion](#e-discussion)  
+### [IV. Data Preprocessing](#iv-data-preprocessing) (10 Mins)  
+- [A. Key Steps in Data Preprocessing](#a-key-steps-in-data-preprocessing)  
+- [B. Challenges in Data Preprocessing](#b-challenges-in-data-preprocessing)  
+- [C. Best Practices for Data Preprocessing](#c-best-practices-for-data-preprocessing)  
+### [V. Exploratory Data Analysis (EDA)](#v-exploratory-data-analysis-eda) (20 Mins)  
+- [A. Goals of EDA](#a-goals-of-eda)  
+- [B. Key Steps in Exploratory Data Analysis](#b-key-steps-in-exploratory-data-analysis)  
+  - [1. Univariate Analysis](#1-univariate-analysis)  
+  - [2. Bivariate Analysis](#2-bivariate-analysis)  
+  - [3. Multivariate Analysis](#3-multivariate-analysis)  
+- [C. Common Techniques in EDA](#c-common-techniques-in-eda)  
+- [D. Feature Engineering](#d-feature-engineering)  
+- [E. Activity: Applying Exploratory Data Analysis](#e-activity-applying-exploratory-data-analysis)  
+### [VI. Bias, Variance, and Bias-Variance Tradeoff](#vi-bias-variance-and-bias-variance-tradeoff) (10 Mins)  
+- [A. Understanding Bias and Variance](#a-understanding-bias-and-variance)  
+- [B. Detecting Bias-Variance Issues](#b-detecting-bias-variance-issues)  
+- [C. Addressing the Tradeoff](#c-addressing-the-tradeoff)  
+### [VII. Train-Test Splitting](#vii-train-test-splitting) (5 Mins)  
+- [A. Key Concepts](#a-key-concepts)  
+- [B. Best Practices](#b-best-practices)  
+### [VIII. Cross Validation](#viii-cross-validation) (10 Mins)  
+- [A. Step-by-Step Process](#a-step-by-step-process)  
+- [B. Example Illustration](#b-example-illustration)  
+- [C. Key Considerations](#c-key-considerations)  
+- [D. Advantages of Cross-Validation](#d-advantages-of-cross-validation)
+### [IX. Breaking Down a Problem to Identify Challenges](#ix-breaking-down-a-problem-to-identify-challenges) (10 Mins)  
+- [A. Addressing Key Machine Learning Challenges](#a-addressing-key-machine-learning-challenges)  
+- [B. Examples of Challenges in ML Projects](#b-examples-of-challenges-in-ml-projects)  
+- [C. Discussion: Ways to Address Challenges in Accuracy, Latency, and Cost](#c-discussion-ways-to-address-challenges-in-accuracy-latency-and-cost)  
+- [D. Activity: Proposing Solutions for Real-World ML Challenges](#d-activity-proposing-solutions-for-real-world-ml-challenges)  
+- [E. Conclusion](#e-conclusion)  
 
 
-## [Table of Contents](#table-of-Contents)
-
-## [Learning Objectives](#learning-Objectives)
-
-## [I. Introduction to Machine Learning Workflow](#i-introduction-to-machine-learning-workflow)(5 Mins)
-### [A. Importance of the ML Workflow](#a-importance-of-the-ml-workflow)
-### [B. Discussion: Understanding the Importance of the ML Workflow](#b-discussion-understanding-the-importance-of-the-ml-workflow)
-
----
-
-## [II. Key Steps in the Machine Learning Workflow](#ii-key-steps-in-the-machine-learning-workflow)(10 Mins)
-### [A. Problem Definition](#a-problem-definition)
-#### [1. Key Elements of Problem Definition](#1-key-elements-of-problem-definition)
-#### [2. Questions to Ask During Problem Definition](#2-questions-to-ask-during-problem-definition)
-#### [3. Example: Customer Churn Prediction](#3-example-customer-churn-prediction)
-#### [4. Importance of Proper Problem Definition](#4-importance-of-proper-problem-definition)
-
----
-
-## [III. Data Collection](#iii-data-collection)(5 Mins)
-### [A. Steps in Data Collection](#a-steps-in-data-collection)
-### [B. Challenges in Data Collection](#b-challenges-in-data-collection)
-### [C. Best Practices for Data Collection](#c-best-practices-for-data-collection)
-### [D. Activity: Evaluating and Improving Data Collection](#d-activity-evaluating-and-improving-data-collection)
-### [E. Discussion](#e-discussion)
-
----
-
-## [IV. Data Preprocessing](#iv-data-preprocessing)(10 Mins)
-### [A. Key Steps in Data Preprocessing](#a-key-steps-in-data-preprocessing)
-### [B. Challenges in Data Preprocessing](#b-challenges-in-data-preprocessing)
-### [C. Best Practices for Data Preprocessing](#c-best-practices-for-data-preprocessing)
-
----
-
-## [V. Exploratory Data Analysis (EDA)](#v-exploratory-data-analysis-eda)(20 Mins)
-### [A. Goals of EDA](#a-goals-of-eda)
-### [B. Key Steps in Exploratory Data Analysis](#b-key-steps-in-exploratory-data-analysis)
-#### [1. Univariate Analysis](#1-univariate-analysis)
-#### [2. Bivariate Analysis](#2-bivariate-analysis)
-#### [3. Multivariate Analysis](#3-multivariate-analysis)
-### [C. Common Techniques in EDA](#c-common-techniques-in-eda)
-### [D. Feature Engineering](#d-feature-engineering)
-### [E. Activity: Applying Exploratory Data Analysis](#e-activity-applying-exploratory-data-analysis)
-
----
-
-## [VI. Bias, Variance, and Bias-Variance Tradeoff](#vi-bias-variance-and-bias-variance-tradeoff)(10Mins)
-### [A. Understanding Bias and Variance](#a-understanding-bias-and-variance)
-### [B. Detecting Bias-Variance Issues](#b-detecting-bias-variance-issues)
-### [C. Addressing the Tradeoff](#c-addressing-the-tradeoff)
-
----
-
-## [VII. Train-Test Splitting](#vii-train-test-splitting)(5Min)
-### [A. Key Concepts](#a-key-concepts)
-### [B. Best Practices](#b-best-practices)
-
----
-
-## [VIII. Cross Validation](#viii-cross-validation)(10 Mins)
-### [A. Step-by-Step Process](#a-step-by-step-process)
-### [B. Example Illustration](#b-example-illustration)
-### [C. Key Considerations](#c-key-considerations)
-### [D. Advantages of Cross-Validation](#d-advantages-of-cross-validation)
-
----
-
-## [IX. Breaking Down a Problem to Identify Challenges](#ix-breaking-down-a-problem-to-identify-challenges)(10 Mins)
-### [A. Addressing Key Machine Learning Challenges](#a-addressing-key-machine-learning-challenges)
-### [B. Examples of Challenges in ML Projects](#b-examples-of-challenges-in-ml-projects)
-### [C. Discussion: Ways to Address Challenges in Accuracy, Latency, and Cost](#c-discussion-ways-to-address-challenges-in-accuracy-latency-and-cost)
-### [D. Activity: Proposing Solutions for Real-World ML Challenges](#d-activity-proposing-solutions-for-real-world-ml-challenges)
-### [E. Conclusion](#e-conclusion)
 
 **Learning Objective**
 By the end of this lesson, participants will be able to:
