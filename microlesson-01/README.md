@@ -62,11 +62,13 @@ By the end of this lesson, participants will be able to:
 - **Apply** data collection, preprocessing, and exploratory analysis techniques to prepare datasets for modeling.
 - **Evaluate** models effectively using train-test splits and cross-validation, assessing their performance and reliability. 
 
-# 1 Introduction to Machine Learning Workflow
+---
+
+## I. Introduction to Machine Learning Workflow
 
 The **Machine Learning (ML) workflow** is a systematic approach that transforms raw data into actionable insights through a series of well-defined steps. This structured process ensures that ML models are developed efficiently and deployed effectively to solve real-world problems.
 
-## A Importance of the ML Workflow
+### A Importance of the ML Workflow
 1. **Clarity and Focus**: Aligns the machine learning solution with the defined objectives and goals.
 2. **Efficiency**: Streamlines the development process, reducing redundancy and errors.
 3. **Reproducibility**: Facilitates consistent and repeatable processes across projects.
@@ -88,23 +90,22 @@ The ML workflow serves as a roadmap for both beginners and professionals, helpin
 
 ---
 
-# II Key Steps in the Machine Learning Workflow 
+## II. Key Steps in the Machine Learning Workflow 
 
-## A. **Problem Definition**
+### A. **Problem Definition**
 The first and most crucial step in the Machine Learning (ML) workflow is to clearly define the problem you are trying to solve. A well-defined problem sets the direction for the entire workflow and ensures that efforts are focused and aligned with the desired outcome. Without this step, the project risks wasting time and resources on irrelevant or poorly scoped tasks.
 
----
 
-### 1 Key Elements of Problem Definition:
+#### 1 Key Elements of Problem Definition:
 
-1. **Understand the Business or Research Objective**:
+   - **Understand the Business or Research Objective**:
    - Clearly articulate what the project aims to achieve.
    - Translate the broader business or research goal into a specific, actionable ML problem.
    - Example:
      - Business Objective: Reduce customer churn in a subscription service.
      - ML Problem: Predict which customers are likely to cancel their subscription.
 
-2. **Define the Output**:
+   - **Define the Output**:
    - Specify the type of output expected from the ML model.
    - Common outputs:
      - **Classification**: Assign categories to inputs (e.g., spam vs. not spam).
@@ -112,20 +113,20 @@ The first and most crucial step in the Machine Learning (ML) workflow is to clea
      - **Clustering**: Group similar data points (e.g., customer segmentation).
      - **Recommendation**: Suggest items (e.g., movies on a streaming platform).
 
-3. **Set Success Metrics**:
+   -**Set Success Metrics**:
    - Define how success will be measured.
    - Examples of metrics:
      - **Classification Problems**: Accuracy, Precision, Recall, F1-score.
      - **Regression Problems**: Mean Squared Error (MSE), Mean Absolute Error (MAE).
 
-4. **Understand Constraints and Requirements**:
+   - **Understand Constraints and Requirements**:
    - Consider factors like:
      - **Time Constraints**: Deadlines for model deployment.
      - **Budget**: Resources available for data collection, computation, and maintenance.
      - **Data Availability**: Quantity and quality of data.
      - **Interpretability**: Whether the model needs to be explainable for stakeholders.
 
-5. **Identify Stakeholders**:
+   - **Identify Stakeholders**:
    - Determine who will use the ML solution and how they will benefit.
    - Stakeholders can include:
      - Business teams.
@@ -162,10 +163,10 @@ The first and most crucial step in the Machine Learning (ML) workflow is to clea
 ✅ **Model Effectiveness**: Aligns the solution with the actual needs and expectations.
 
 
-Defining the problem accurately is the foundation of a successful ML project and greatly influences the subsequent steps in the workflow.
+---
 
+## III. Data Collection
 
-## III .Data Collection
 ## A. Steps in Data Collection:
 
 | **Step**                   | **Description**                                                                                 | **Examples/Details**                                                                                 |
@@ -258,7 +259,7 @@ However, the data has several issues:
 
 ---
 
-   ## IV. **Data Preprocessing**
+## IV. **Data Preprocessing**
 
 Data preprocessing involves preparing raw data for analysis and modeling. This step ensures that the data is clean, consistent, and structured in a way that enhances the performance of machine learning models. Since raw data often contains noise, inconsistencies, or irrelevant information, preprocessing is a critical step in the ML workflow.
 
@@ -293,8 +294,7 @@ Data preprocessing involves preparing raw data for analysis and modeling. This s
 
 ---
 
-
-## IV. **Exploratory Data Analysis (EDA)**
+## V. **Exploratory Data Analysis (EDA)**
 
 Exploratory Data Analysis (EDA) is the process of analyzing datasets to summarize their key characteristics, identify patterns, and uncover relationships. It provides insights that help guide the preprocessing, feature selection, and modeling phases of the machine learning workflow.
 
@@ -527,6 +527,7 @@ Analyze the dataset to answer the following questions:
 
 Use **cross-validation** to assess performance on unseen data and prevent overfitting.(will be discussed shortly in detail)
 
+---
 
 ## VII. **Train-Test Splitting**
    - Divide the dataset into training, validation, and testing subsets.
@@ -619,7 +620,8 @@ Each fold serves as the testing set exactly once, and every data point in the da
 By following this process, cross-validation helps to evaluate models thoroughly and ensures that the chosen model generalizes well to unseen data.
 
 ---
-**IX Ways to Break Down Problem to determine challanges with Accuracy ,Latency ,Cost**
+
+## IX. Ways to Break Down Problem to determine challanges with Accuracy ,Latency ,Cost**
 
 ### A. Addressing Key Machine Learning Challenges
 
