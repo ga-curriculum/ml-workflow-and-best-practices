@@ -811,7 +811,7 @@ By following this process, cross-validation helps to evaluate models thoroughly 
 
 ---
 
-## IX. Ways to Break Down Problem to determine challanges with Accuracy ,Latency ,Cost**
+## IX. Ways to Break Down Problem to determine challanges with Accuracy ,Latency ,Cost
 
 ### A. Addressing Key Machine Learning Challenges
 
