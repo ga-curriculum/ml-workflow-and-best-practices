@@ -84,9 +84,6 @@ The ML workflow serves as a roadmap for both beginners and professionals, helpin
 - **Discussion Prompts:**
   - Why is having a well-defined workflow important for developing machine learning models? 
   - Can you think of examples where a lack of structure in the workflow might lead to inefficiencies or poor outcomes?
-  - How does the iterative nature of the ML workflow contribute to model performance and real-world applicability?
-  - In what ways can reproducibility and scalability impact the success of ML projects within organizations?
-  - Discuss how aligning the workflow with defined objectives can prevent misaligned solutions or wasted efforts.
 
 ---
 
