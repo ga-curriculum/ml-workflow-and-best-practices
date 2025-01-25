@@ -164,7 +164,7 @@ The first and most crucial step in the Machine Learning (ML) workflow is to clea
 
 ## III. Data Collection
 
-## A. Steps in Data Collection:
+### A. Steps in Data Collection:
 
 | **Step**                   | **Description**                                                                                 | **Examples/Details**                                                                                 |
 |----------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
@@ -175,7 +175,6 @@ The first and most crucial step in the Machine Learning (ML) workflow is to clea
 | **2.1.5 Document the Data Collection Process** | Maintain records of data sources, extraction methods, and any preprocessing steps.                  | Ensures transparency and reproducibility of the data collection process.                                  |
 
 
----
 
 ### B.Challenges in Data Collection
 
@@ -191,7 +190,6 @@ The first and most crucial step in the Machine Learning (ML) workflow is to clea
 💰 **Cost**  
    - Licensing fees or expenses associated with data acquisition.
 
----
 
 ### C. Best Practices for Data Collection
 
@@ -211,18 +209,13 @@ The first and most crucial step in the Machine Learning (ML) workflow is to clea
    - Regularly collect updated data to maintain model performance over time.
 
 
----
-
-Data collection is a foundational step in the ML workflow, and the quality of this step directly impacts the project's overall success. Ensuring relevance, accuracy, and completeness of the data is critical to building reliable and effective machine learning models.
-
 ### D. **Activity: Evaluating and Improving Data Collection**
 
-#### **Objective**
+#### 1. **Objective**
 Test your understanding of the data collection process, challenges, and best practices by analyzing a hypothetical scenario and making recommendations.
 
----
 
-#### **Scenario**
+#### 2. **Scenario**
 You are tasked with building a machine learning model to predict the likelihood of patients developing a certain medical condition. The initial dataset contains:
 
 1. Patient demographics (age, gender, etc.).  
@@ -235,6 +228,8 @@ However, the data has several issues:
 - Inconsistent formats in the lifestyle information (e.g., "Exercise: Yes" vs. "Physical Activity: Regular").
 - Data collected only from urban hospitals, leaving rural areas unrepresented.
 - Limited historical records for patients under 18 years old.
+
+- At this stage Developer identifies the requirement of Data Pre-Processing 
 
 ---
 
