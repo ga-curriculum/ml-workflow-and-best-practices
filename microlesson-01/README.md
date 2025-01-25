@@ -168,11 +168,11 @@ The first and most crucial step in the Machine Learning (ML) workflow is to clea
 
 | **Step**                   | **Description**                                                                                 | **Examples/Details**                                                                                 |
 |----------------------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------|
-| **2.1.1 Identify Data Requirements** | Determine what data is needed to address the problem.                                           | Consider features, granularity, and historical depth. Example: For a customer churn model, collect customer demographics, transaction history, and interaction logs. |
-| **2.1.2 Data Gathering**            | Extract data from identified sources.                                                            | Sources could include databases, APIs, or third-party providers.                                         |
-| **2.1.3 Validate Data Quality**     | Ensure the collected data meets the necessary standards.                                          | Check for missing values, inconsistent formats, outliers, or noise.                                      |
-| **2.1.4 Data Consolidation**        | Combine data from multiple sources if needed.                                                    | Example: Merging sales data with customer feedback data.                                                 |
-| **2.1.5 Document the Data Collection Process** | Maintain records of data sources, extraction methods, and any preprocessing steps.                  | Ensures transparency and reproducibility of the data collection process.                                  |
+| **Identify Data Requirements** | Determine what data is needed to address the problem.                                           | Consider features, granularity, and historical depth. Example: For a customer churn model, collect customer demographics, transaction history, and interaction logs. |
+| **Data Gathering**            | Extract data from identified sources.                                                            | Sources could include databases, APIs, or third-party providers.                                         |
+| **Validate Data Quality**     | Ensure the collected data meets the necessary standards.                                          | Check for missing values, inconsistent formats, outliers, or noise.                                      |
+| **Data Consolidation**        | Combine data from multiple sources if needed.                                                    | Example: Merging sales data with customer feedback data.                                                 |
+| **Document the Data Collection Process** | Maintain records of data sources, extraction methods, and any preprocessing steps.                  | Ensures transparency and reproducibility of the data collection process.                                  |
 
 
 
@@ -337,8 +337,8 @@ It provides insights that help guide the preprocessing, feature selection, and m
 
 ---
 
-### Examples Using Dummy Data:
-#### Dummy Dataset:
+- **Examples Using Dummy Dataset 1**
+##### Dummy Dataset:
 This small dataset contains information about customers, including their age, income, and whether they purchased a product (`Purchased`).
 
 | CustomerID | Age | Income ($) | Purchased |
@@ -352,7 +352,7 @@ This small dataset contains information about customers, including their age, in
 
 ---
 
-###  Univariate Analysis:
+- **Univariate Analysis**
 #### Example:
 - **Goal**: Analyze the distribution of the `Age` column.
 - **Insight**:
@@ -360,9 +360,8 @@ This small dataset contains information about customers, including their age, in
   - Range = Maximum Age - Minimum Age = 50 - 23 = 27 years.
   - Observing the age distribution reveals that the dataset primarily represents middle-aged individuals.
 
----
 
-### Bivariate Analysis:
+- **Bivariate Analysis**
 #### Example:
 - **Goal**: Explore the relationship between `Income` and `Purchased`.
 - **Observation**:
@@ -370,18 +369,16 @@ This small dataset contains information about customers, including their age, in
   - Customers with higher incomes ($70,000 and $65,000) tend to have `Purchased=No`.
   - Indicates a potential inverse correlation between higher income and purchase likelihood.
 
----
-
-### Correlation Analysis:
+- **Correlation Analysis**
 #### Example:
 - **Goal**: Assess the relationship between `Age` and `Income`.
 - **Insight**:
   - Calculate the correlation coefficient (e.g., `r = 0.92`).
   - A high positive correlation suggests that income increases with age in this dataset.
 
----
 
-### Outlier Detection:
+
+- **Outlier Detection**
 #### Example:
 - **Goal**: Identify anomalies in the `Income` column.
 - **Analysis**:
@@ -392,6 +389,82 @@ This small dataset contains information about customers, including their age, in
       - Lower Bound = Q1 - 1.5 × IQR = $15,000.
       - Upper Bound = Q3 + 1.5 × IQR = $95,000.
   - No incomes fall outside this range, so no outliers are detected.
+
+- **Example Using Dummy DataSet 2**
+##### Dummy Dataset
+| Id  | LotArea | YearBuilt | Neighborhood | SalePrice | GarageArea | TotalRooms |
+|-----|---------|-----------|--------------|-----------|------------|------------|
+| 1   | 8450    | 2003      | NAmes        | 200000    | 500        | 8          |
+| 2   | 9600    | 1976      | CollgCr      | 185000    | 550        | 6          |
+| 3   | 11250   | 2001      | NAmes        | 215000    | 525        | 7          |
+| 4   | 9550    | 1915      | Edwards      | 175000    | 480        | 5          |
+| 5   | 15000   | 2010      | BrkSide      | 400000    | 600        | 10         |
+
+---
+
+### Steps in Data Preprocessing
+
+#### 1 Handle Missing Values
+- No missing values in this dataset, so no handling is required.
+
+---
+
+#### 2 Encode Categorical Variables
+- Neighborhood is a categorical column with values like NAmes, CollgCr, Edwards, and BrkSide.
+- One-hot encode this column by creating new columns for each unique value, where 1 indicates the presence and 0 indicates the absence.
+
+**After Encoding:**
+| Id  | LotArea | YearBuilt | SalePrice | GarageArea | TotalRooms | NAmes | CollgCr | Edwards | BrkSide |
+|-----|---------|-----------|-----------|------------|------------|-------|---------|---------|---------|
+| 1   | 8450    | 2003      | 200000    | 500        | 8          | 1     | 0       | 0       | 0       |
+| 2   | 9600    | 1976      | 185000    | 550        | 6          | 0     | 1       | 0       | 0       |
+| 3   | 11250   | 2001      | 215000    | 525        | 7          | 1     | 0       | 0       | 0       |
+| 4   | 9550    | 1915      | 175000    | 480        | 5          | 0     | 0       | 1       | 0       |
+| 5   | 15000   | 2010      | 400000    | 600        | 10         | 0     | 0       | 0       | 1       |
+
+---
+
+#### 3 Feature Scaling
+- Normalize columns like LotArea and GarageArea to bring them to the same scale.
+- Use Min-Max Scaling to ensure all values fall within a range of 0 to 1.
+
+**Scaled Dataset:**
+| Id  | LotArea | YearBuilt | SalePrice | GarageArea | TotalRooms | NAmes | CollgCr | Edwards | BrkSide |
+|-----|---------|-----------|-----------|------------|------------|-------|---------|---------|---------|
+| 1   | 0.00    | 2003      | 200000    | 0.20       | 8          | 1     | 0       | 0       | 0       |
+| 2   | 0.23    | 1976      | 185000    | 0.40       | 6          | 0     | 1       | 0       | 0       |
+| 3   | 0.54    | 2001      | 215000    | 0.30       | 7          | 1     | 0       | 0       | 0       |
+| 4   | 0.22    | 1915      | 175000    | 0.00       | 5          | 0     | 0       | 1       | 0       |
+| 5   | 1.00    | 2010      | 400000    | 1.00       | 10         | 0     | 0       | 0       | 1       |
+
+---
+
+#### 4 Outlier Detection
+- Use the interquartile range (IQR) method to detect outliers in SalePrice:
+  - Calculate Q1 (25th percentile) = 185000
+  - Calculate Q3 (75th percentile) = 215000
+  - IQR = Q3 - Q1 = 215000 - 185000 = 30000
+  - Define lower bound = Q1 - 1.5 * IQR = 185000 - 1.5 * 30000 = 140000
+  - Define upper bound = Q3 + 1.5 * IQR = 215000 + 1.5 * 30000 = 260000
+- Remove rows where SalePrice is less than 140000 or greater than 260000.
+
+**Dataset After Removing Outliers:**
+| Id  | LotArea | YearBuilt | SalePrice | GarageArea | TotalRooms | NAmes | CollgCr | Edwards | BrkSide |
+|-----|---------|-----------|-----------|------------|------------|-------|---------|---------|---------|
+| 1   | 0.00    | 2003      | 200000    | 0.20       | 8          | 1     | 0       | 0       | 0       |
+| 2   | 0.23    | 1976      | 185000    | 0.40       | 6          | 0     | 1       | 0       | 0       |
+| 3   | 0.54    | 2001      | 215000    | 0.30       | 7          | 1     | 0       | 0       | 0       |
+| 4   | 0.22    | 1915      | 175000    | 0.00       | 5          | 0     | 0       | 1       | 0       |
+
+---
+
+### Final Preprocessed Dataset
+| LotArea | YearBuilt | GarageArea | TotalRooms | NAmes | CollgCr | Edwards | BrkSide | SalePrice |
+|---------|-----------|------------|------------|-------|---------|---------|---------|-----------|
+| 0.00    | 2003      | 0.20       | 8          | 1     | 0       | 0       | 0       | 200000    |
+| 0.23    | 1976      | 0.40       | 6          | 0     | 1       | 0       | 0       | 185000    |
+| 0.54    | 2001      | 0.30       | 7          | 1     | 0       | 0       | 0       | 215000    |
+| 0.22    | 1915      | 0.00       | 5          | 0     | 0       | 1       | 0       | 175000    |
 
 ---
 
@@ -415,6 +488,90 @@ Feature engineering is the process of creating, transforming, or selecting featu
 
 - **Insight**:
   - Customer 6 has the highest income efficiency despite not purchasing the product.
+ 
+- **DataSet 2 For Feature Engineering**
+  ### Dummy Dataset
+| Id  | Age | Salary  | Department | YearsExperience | Location | Purchased |
+|-----|-----|---------|------------|-----------------|----------|-----------|
+| 1   | 25  | 50000   | Sales      | 2               | New York | Yes       |
+| 2   | 32  | 60000   | IT         | 5               | San Jose | No        |
+| 3   | 45  | 80000   | HR         | 10              | Chicago  | Yes       |
+| 4   | 28  | 55000   | Sales      | 3               | New York | No        |
+| 5   | 38  | 75000   | IT         | 8               | San Jose | Yes       |
+
+---
+
+### Feature Engineering Examples
+
+#### 1 Create a New Feature: Age Groups
+- Bucket the Age column into groups:
+  - Age < 30: "Young"
+  - 30 ≤ Age < 40: "Mid-Age"
+  - Age ≥ 40: "Senior"
+
+**Updated Dataset:**
+| Id  | Age | Salary  | Department | YearsExperience | Location | Purchased | AgeGroup |
+|-----|-----|---------|------------|-----------------|----------|-----------|----------|
+| 1   | 25  | 50000   | Sales      | 2               | New York | Yes       | Young    |
+| 2   | 32  | 60000   | IT         | 5               | San Jose | No        | Mid-Age  |
+| 3   | 45  | 80000   | HR         | 10              | Chicago  | Yes       | Senior   |
+| 4   | 28  | 55000   | Sales      | 3               | New York | No        | Young    |
+| 5   | 38  | 75000   | IT         | 8               | San Jose | Yes       | Mid-Age  |
+
+---
+
+#### 2 Create Interaction Features
+- Combine YearsExperience and Salary to create a new feature: ExperienceLevel
+  - Formula: `ExperienceLevel = Salary / YearsExperience`
+
+**Updated Dataset:**
+| Id  | Age | Salary  | Department | YearsExperience | Location | Purchased | AgeGroup | ExperienceLevel |
+|-----|-----|---------|------------|-----------------|----------|-----------|----------|-----------------|
+| 1   | 25  | 50000   | Sales      | 2               | New York | Yes       | Young    | 25000           |
+| 2   | 32  | 60000   | IT         | 5               | San Jose | No        | Mid-Age  | 12000           |
+| 3   | 45  | 80000   | HR         | 10              | Chicago  | Yes       | Senior   | 8000            |
+| 4   | 28  | 55000   | Sales      | 3               | New York | No        | Young    | 18333           |
+| 5   | 38  | 75000   | IT         | 8               | San Jose | Yes       | Mid-Age  | 9375            |
+
+---
+
+#### 3 One-Hot Encode Categorical Variables
+- Convert Department and Location into one-hot encoded features.
+
+**Updated Dataset:**
+| Id  | Age | Salary  | YearsExperience | Purchased | AgeGroup | ExperienceLevel | Dept_Sales | Dept_IT | Dept_HR | Loc_NY | Loc_SJ | Loc_CH |
+|-----|-----|---------|-----------------|-----------|----------|-----------------|------------|---------|---------|--------|--------|--------|
+| 1   | 25  | 50000   | 2               | Yes       | Young    | 25000           | 1          | 0       | 0       | 1      | 0      | 0      |
+| 2   | 32  | 60000   | 5               | No        | Mid-Age  | 12000           | 0          | 1       | 0       | 0      | 1      | 0      |
+| 3   | 45  | 80000   | 10              | Yes       | Senior   | 8000            | 0          | 0       | 1       | 0      | 0      | 1      |
+| 4   | 28  | 55000   | 3               | No        | Young    | 18333           | 1          | 0       | 0       | 1      | 0      | 0      |
+| 5   | 38  | 75000   | 8               | Yes       | Mid-Age  | 9375            | 0          | 1       | 0       | 0      | 1      | 0      |
+
+---
+
+#### 4 Binarize the Target Variable
+- Convert Purchased (Yes/No) into binary values:
+  - Yes → 1
+  - No → 0
+
+**Updated Dataset:**
+| Id  | Age | Salary  | YearsExperience | Purchased | AgeGroup | ExperienceLevel | Dept_Sales | Dept_IT | Dept_HR | Loc_NY | Loc_SJ | Loc_CH |
+|-----|-----|---------|-----------------|-----------|----------|-----------------|------------|---------|---------|--------|--------|--------|
+| 1   | 25  | 50000   | 2               | 1         | Young    | 25000           | 1          | 0       | 0       | 1      | 0      | 0      |
+| 2   | 32  | 60000   | 5               | 0         | Mid-Age  | 12000           | 0          | 1       | 0       | 0      | 1      | 0      |
+| 3   | 45  | 80000   | 10              | 1         | Senior   | 8000            | 0          | 0       | 1       | 0      | 0      | 1      |
+| 4   | 28  | 55000   | 3               | 0         | Young    | 18333           | 1          | 0       | 0       | 1      | 0      | 0      |
+| 5   | 38  | 75000   | 8               | 1         | Mid-Age  | 9375            | 0          | 1       | 0       | 0      | 1      | 0      |
+
+---
+
+### Key Takeaways
+- **Age Grouping**: Simplifies age analysis by categorizing into groups.
+- **Interaction Features**: Combines multiple columns (like Salary and YearsExperience) to create meaningful metrics.
+- **One-Hot Encoding**: Makes categorical variables usable for machine learning models.
+- **Binarization**: Converts Yes/No into numerical values for better model compatibility.
+
+---
 
 ### E **Activity: Applying Exploratory Data Analysis**
 
