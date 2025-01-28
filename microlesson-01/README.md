@@ -1,9 +1,9 @@
 <h1>
-  <span class="headline">[ML Workflow and Best Practices]</span>
+  <span class="headline">ML Workflow and Best Practices</span>
   <span class="subhead">  </span>
 </h1>
 
-### [Table of Contents]
+### Table of Contents
 ### [Learning Objectives](#learning-objectives)
 ### [I.Introduction to Machine Learning Workflow](#iintroduction-to-machine-learning-workflow)  
 - **[A.Importance of the ML Workflow](#aimportance-of-the-ml-workflow)**  
