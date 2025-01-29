@@ -1,74 +1,18 @@
 <h1>
   <span class="headline">ML Workflow and Best Practices</span>
-  <span class="subhead">  </span>
+  <span class="subhead">Machine Learning Workflow</span>
 </h1>
 
-### Table of Contents
-### [Learning Objectives](#learning-objectives)
-### [I.Introduction to Machine Learning Workflow](#iintroduction-to-machine-learning-workflow)  
-- **[A.Importance of the ML Workflow](#aimportance-of-the-ml-workflow)**  
-- **[B.Discussion: Understanding the Importance of the ML Workflow](#bdiscussion-understanding-the-importance-of-the-ml-workflow)**  
-### [II.Key Steps in the Machine Learning Workflow](#iikey-steps-in-the-machine-learning-workflow)  
-- **[A.Problem Definition](#aproblem-definition)**  
-  - [1.Key Elements of Problem Definition](#1key-elements-of-problem-definition)  
-  - [2.Questions to Ask During Problem Definition](#2questions-to-ask-during-problem-definition)  
-  - [3.Example: Customer Churn Prediction](#3example-customer-churn-prediction)  
-  - [4.Importance of Proper Problem Definition](#4importance-of-proper-problem-definition)  
 
-### [III.Data Collection](#iiidata-collection)  
-- **[A.Steps in Data Collection](#asteps-in-data-collection)**  
-- **[B.Challenges in Data Collection](#bchallenges-in-data-collection)**  
-- **[C.Best Practices for Data Collection](#cbest-practices-for-data-collection)**  
-- **[D.Activity: Evaluating and Improving Data Collection](#dactivity-evaluating-and-improving-data-collection)**  
-- **[E.Discussion](#ediscussion)**  
-### [IV.Data Preprocessing](#ivdata-preprocessing)  
-- **[A.Key Steps in Data Preprocessing](#akey-steps-in-data-preprocessing)**  
-- **[B.Challenges in Data Preprocessing](#bchallenges-in-data-preprocessing)**  
-- **[C.Best Practices for Data Preprocessing](#cbest-practices-for-data-preprocessing)**  
-### [V.Exploratory Data Analysis (EDA)](#vexploratory-data-analysis-eda)  
-- **[A.Goals of EDA](#agoals-of-eda)**  
-- **[B.Key Steps in Exploratory Data Analysis](#bkey-steps-in-exploratory-data-analysis)**  
-  - [1.Univariate Analysis](#1univariate-analysis)  
-  - [2.Bivariate Analysis](#2bivariate-analysis)  
-  - [3.Multivariate Analysis](#3multivariate-analysis)  
-- **[C.Common Techniques in EDA](#ccommon-techniques-in-eda)**  
-- **[D.Feature Engineering](#dfeature-engineering)**  
-- **[E.Activity: Applying Exploratory Data Analysis](#eactivity-applying-exploratory-data-analysis)**  
-### [VI.Bias, Variance, and Bias-Variance Tradeoff](#vibias-variance-and-bias-variance-tradeoff)  
-- **[A.Understanding Bias and Variance](#aunderstanding-bias-and-variance)**  
-- **[B.Detecting Bias-Variance Issues](#bdetecting-bias-variance-issues)**  
-- **[C.Addressing the Tradeoff](#caddressing-the-tradeoff)**  
-### [VII.Train-Test Splitting](#viitrain-test-splitting)  
-- **[A.Key Concepts](#akey-concepts)**  
-- **[B.Best Practices](#bbest-practices)**  
-### [VIII.Cross Validation](#viiicross-validation)  
-- **[A.Step-by-Step Process](#astep-by-step-process)**  
-- **[B.Example Illustration](#bexample-illustration)**  
-- **[C.Key Considerations](#ckey-considerations)**  
-- **[D.Advantages of Cross-Validation](#dadvantages-of-cross-validation)**  
+**Learning Objective**:  By the end of this lesson, you will be able to explain the machine learning workflow.
 
-### [IX.Breaking Down a Problem to Identify Challenges](#ixbreaking-down-a-problem-to-identify-challenges)  
-- **[A.Addressing Key Machine Learning Challenges](#aaddressing-key-machine-learning-challenges)**  
-- **[B.Examples of Challenges in ML Projects](#bexamples-of-challenges-in-ml-projects)**  
-- **[C.Discussion: Ways to Address Challenges in Accuracy, Latency, and Cost](#cdiscussion-ways-to-address-challenges-in-accuracy-latency-and-cost)**  
-- **[D.Activity: Proposing Solutions for Real-World ML Challenges](#dactivity-proposing-solutions-for-real-world-ml-challenges)**  
-- **[E.Conclusion](#econclusion)**  
 
-**Learning Objective**
-By the end of this lesson, participants will be able to:
 
-- **Define** the concept and significance of the ML workflow, identifying its key components and their interrelationships.
-- **Formulate** machine learning problems by aligning them with specific business objectives and goals.
-- **Apply** data collection, preprocessing, and exploratory analysis techniques to prepare datasets for modeling.
-- **Evaluate** models effectively using train-test splits and cross-validation, assessing their performance and reliability. 
-
----
-
-## I. Introduction to Machine Learning Workflow
+## Introduction to Machine Learning Workflow
 
 The **Machine Learning (ML) workflow** is a systematic approach that transforms raw data into actionable insights through a series of well-defined steps. This structured process ensures that ML models are developed efficiently and deployed effectively to solve real-world problems.
 
-### A Importance of the ML Workflow
+### Importance of the ML Workflow
 1. **Clarity and Focus**: Aligns the machine learning solution with the defined objectives and goals.
 2. **Efficiency**: Streamlines the development process, reducing redundancy and errors.
 3. **Reproducibility**: Facilitates consistent and repeatable processes across projects.
@@ -76,81 +20,18 @@ The **Machine Learning (ML) workflow** is a systematic approach that transforms 
 5. **Performance Assurance**: Ensures that models are robust, accurate, and reliable.
 
 The ML workflow serves as a roadmap for both beginners and professionals, helping them navigate the complexities of data, algorithms, and deployment strategies. The workflow is iterative, meaning that improvements and adjustments are continuously made to achieve the best results.
-.
-### B. **Discussion: Understanding the Importance of the ML Workflow**
+
+
+### Discussion: Understanding the Importance of the ML Workflow
 - **Objective:** Reflect on the key components and significance of the ML workflow in real-world applications.
 - **Discussion Prompts:**
   - Why is having a well-defined workflow important for developing machine learning models? 
   - Can you think of examples where a lack of structure in the workflow might lead to inefficiencies or poor outcomes?
 
----
 
-## II. Key Steps in the Machine Learning Workflow 
+## Key Steps in the Machine Learning Workflow 
+???
 
-### A. **Problem Definition**
-The first and most crucial step in the Machine Learning (ML) workflow is to clearly define the problem you are trying to solve. A well-defined problem sets the direction for the entire workflow and ensures that efforts are focused and aligned with the desired outcome. Without this step, the project risks wasting time and resources on irrelevant or poorly scoped tasks.
-#### 1 Key Elements of Problem Definition:
-
-   - **Understand the Business or Research Objective**:
-   - Clearly articulate what the project aims to achieve.
-   - Translate the broader business or research goal into a specific, actionable ML problem.
-   - Example:
-     - Business Objective: Reduce customer churn in a subscription service.
-     - ML Problem: Predict which customers are likely to cancel their subscription.
-
-   - **Define the Output**:
-   - Specify the type of output expected from the ML model.
-   - Common outputs:
-     - **Classification**: Assign categories to inputs (e.g., spam vs. not spam).
-     - **Regression**: Predict continuous values (e.g., house prices).
-     - **Clustering**: Group similar data points (e.g., customer segmentation).
-     - **Recommendation**: Suggest items (e.g., movies on a streaming platform).
-
-   -**Set Success Metrics**:
-   - Define how success will be measured.
-   - Examples of metrics:
-     - **Classification Problems**: Accuracy, Precision, Recall, F1-score.
-     - **Regression Problems**: Mean Squared Error (MSE), Mean Absolute Error (MAE).
-
-   - **Understand Constraints and Requirements**:
-   - Consider factors like:
-     - **Time Constraints**: Deadlines for model deployment.
-     - **Budget**: Resources available for data collection, computation, and maintenance.
-     - **Data Availability**: Quantity and quality of data.
-     - **Interpretability**: Whether the model needs to be explainable for stakeholders.
-
-   - **Identify Stakeholders**:
-   - Determine who will use the ML solution and how they will benefit.
-   - Stakeholders can include:
-     - Business teams.
-     - End-users.
-     - Researchers or engineers.
-
-#### 2 Questions to Ask During Problem Definition
-
-🔍 **What is the problem we are solving, and why is it important?**  
-🎯 **What is the desired outcome or impact of the solution?**  
-📊 **What data is required to solve the problem, and is it available?**  
-⏱️ **What are the constraints (time, budget, computational resources)?**  
-📈 **How will we measure success?**
-
-####  3 Example: Customer Churn Prediction
-
-🎯 **Objective**: Reduce customer churn by identifying customers likely to leave.  
-📂 **Type of Problem**: Classification (binary: churn vs. no churn).  
-🔢 **Output**: A probability score for each customer indicating the likelihood of churn.  
-📏 **Success Metric**: Achieve a minimum precision of 90% to minimize false positives.  
-⏳ **Constraints**: The model must process predictions within 1 second for real-time applications.
-
-#### 4  Importance of Proper Problem Definition
-
-🧠 **Focus and Clarity**: Ensures all stakeholders have a shared understanding of the objective.  
-🚀 **Avoid Scope Creep**: Prevents the project from expanding beyond its initial purpose.  
-💡 **Resource Optimization**: Helps allocate resources effectively, avoiding unnecessary costs.  
-✅ **Model Effectiveness**: Aligns the solution with the actual needs and expectations.
-
-
----
 
 ## III. Data Collection
 
