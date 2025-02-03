@@ -16,16 +16,17 @@ By the end of this lesson, you will be able to:
 
 | Lesson | Est. Delivery Time | Skills |
 | ------ |:------------------:| ------ |
-| [Setup](./setup/README.md)                          | 10 min | Set up the development environment. |
-| [Machine Learning Workflow](./machine-learning-workflow/README.md) | 90 min  | List and explain the steps in the machine learning workflow.|
-| [Problem Definition](./problem-definition/README.md) | 90 min  | List the tasks that need do be done arrive at the problem definition.|
-| [Data Collection](./data-collection/README.md) | 90 min  | Perform data collection on a data set.|
-| [Data preprocessing](./data-preprocessing/README.md) | 90 min  | Perform data preprocessing on a data set.|
-| [Exploratory Data Analysis](./exploratory-data-analysis/README.md) | 90 min  | Perform EDM.|
-| [Bias-Variance Tradeoff](./bias-variance-tradeoff/README.md) | 90 min  | Make decisions related to bias-variance tradeoff.|
-| [Train-test-splitting](./train-test-splitting/README.md) | 90 min  | Evaluate a model using train-test splitting technique.|
-| [Cross Validation](./data-collection/README.md) | 90 min  | Evaluate a model using cross validation technique.|
-| **Total content**                                   | 1 hr 30 min |                                     |
+| [Setup](./setup/README.md)                          | 2 min | Set up the development environment. |
+| [Machine Learning Workflow](./machine-learning-workflow/README.md) | 10 min  | List and explain the steps in the machine learning workflow.|
+| [Problem Definition](./problem-definition/README.md) | 15 min  | Identify and define a problem that needs to be addressed using a machine learning solution.|
+| [Data Collection](./data-collection/README.md) | 15 min  | Describe the data collection process in the machine learning workflow.|
+| [Data Preprocessing](./data-preprocessing/README.md) | 10 min  | Describe the data collection process in the machine learning workflow.|
+| [Exploratory Data Analysis](./exploratory-data-analysis/README.md) | 30 min  | Perform EDM on preprocessed data.|
+| [Train-Test Splitting](./train-test-splitting/README.md) | 15 min  | Evaluate a model using train-test splitting technique.|
+| [Bias-Variance Tradeoff](./bias-variance-tradeoff/README.md) | 10 min  | Describe bias, variance and bias-variance tradeoff in ML models.|
+| [Cross Validation](./data-collection/README.md) | 10 min  | Describe cross validation technique.|
+| [Challenges in ML Projects](./challenges-in-ml-projects/README.md) | 20 min  | Describe common challenges in machine learning projects and how to address them.|
+| **Total content**                                   | 2 hr 17 min |                                     |
 
 ## References
 
@@ -40,7 +41,7 @@ By the end of this lesson, you will be able to:
 
 ### Course landing pages
 
-- [Fallback](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/tktk-module-name/canvas-landing-pages/fallback.html)
+- [Fallback](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/ml-workflow-and-best-practices/canvas-landing-pages/fallback.html)
 
 ### Resources
 

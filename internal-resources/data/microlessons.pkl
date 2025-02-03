@@ -22,3 +22,52 @@ problemDefinition = new Template.Microlesson {
   type = "Content"
   videoUrl = ""
 }
+
+dataCollection = new Template.Microlesson {
+  friendlyName = "Data Collection"
+  dirName = "data-collection"
+  type = "Content"
+  videoUrl = ""
+}
+
+dataPreprocessing = new Template.Microlesson {
+  friendlyName = "Data Preprocessing"
+  dirName = "data-preprocessing"
+  type = "Content"
+  videoUrl = ""
+}
+
+exploratoryDataAnalysis = new Template.Microlesson {
+  friendlyName = "Exploratory Data Analysis"
+  dirName = "exploratory-data-analysis"
+  type = "Content"
+  videoUrl = ""
+}
+
+trainTestSplitting = new Template.Microlesson {
+  friendlyName = "Train-Test Splitting"
+  dirName = "train-test-splitting"
+  type = "Content"
+  videoUrl = ""
+}
+
+biasVarianceTradeoff = new Template.Microlesson {
+  friendlyName = "Bias-Variance Tradeoff"
+  dirName = "bias-variance-tradeoff"
+  type = "Content"
+  videoUrl = ""
+}
+
+crossValidation = new Template.Microlesson {
+  friendlyName = "Cross Validation"
+  dirName = "cross-validation"
+  type = "Content"
+  videoUrl = ""
+}
+
+challengesInMLProjects = new Template.Microlesson {
+  friendlyName = "Challenges in ML Projects"
+  dirName = "challenges-in-ml-projects"
+  type = "Content"
+  videoUrl = ""
+}
