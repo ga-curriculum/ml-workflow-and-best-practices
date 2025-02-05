@@ -29,7 +29,8 @@
 - **Determine Success Metrics**:  
   - 🎯 Accuracy: Metrics like precision, recall, and F1 score.  
   - ⏱️ Latency: Time required to produce predictions.  
-  - 💰 Cost: Resources for computation, data acquisition, and maintenance.  
+  - 💰 Cost: Resources for computation, data acquisition, and maintenance.
+
 #### 2.🔍 Analyzing Accuracy Challenges:
 - **Data Quality**:  
   - 📉 Are there missing values, outliers, or biases in the dataset?  
@@ -38,7 +39,8 @@
   - 🤔 Can the algorithm handle the complexity of the data?  
   - ⚠️ Are there risks of overfitting or underfitting?  
 - **Evaluation Metrics**:  
-  - ✅ Do chosen metrics align with business objectives?  
+  - ✅ Do chosen metrics align with business objectives?
+
 #### 3.⚡ Evaluating Latency Challenges:
 - **Prediction Speed**:  
   - ⏩ Is real-time or batch processing required?  
@@ -46,7 +48,8 @@
   - 🖥️ Is the model too resource-heavy for the deployment environment?  
   - 🔧 Can optimizations like quantization or pruning improve speed?  
 - **System Integration**:  
-  - 📡 Are delays introduced by API latency or network bottlenecks?  
+  - 📡 Are delays introduced by API latency or network bottlenecks?
+
 #### 4.💸 Assessing Cost Challenges:
 - **Infrastructure Requirements**:  
   - 🔋 What hardware or cloud resources are necessary for training and inference?  
@@ -55,7 +58,8 @@
 - **Scalability**:  
   - 📈 Can the solution scale with increasing data or traffic?  
 - **Maintenance**:  
-  - 🔧 What are the costs of retraining and updating the model?  
+  - 🔧 What are the costs of retraining and updating the model?
+  
 #### 5.🔁 Iterative Problem Refinement:
 - **Trade-Off Analysis**:  
   - ⚖️ Balance between accuracy, latency, and cost.  
