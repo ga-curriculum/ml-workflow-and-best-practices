@@ -65,12 +65,13 @@ print("Testing set size:", X_test.shape)
 
 ## Choosing the Right Train-Test Split Ratio
 
-| **Dataset Size** | **Common Train-Test Split Ratio** | **Why?** |
-|---------------|----------------------|----------------------------|
-| **Small dataset (<1,000 samples)** | **90% train, 10% test** | To retain as much training data as possible |
-| **Medium dataset (1,000 - 10,000 samples)** | **80% train, 20% test** | Standard practice |
-| **Large dataset (>10,000 samples)** | **70% train, 30% test** | Sufficient training data available |
+ | **Dataset Size**                 | **Common Train-Test Split Ratio**  | **Why?**                                        |
+|----------------------------------|----------------------------------|------------------------------------------------|
+| **Small dataset (<1,000 samples)**  | **90% train, 10% test**         | To retain as much training data as possible   |
+| **Medium dataset (1,000 - 10,000 samples)** | **80% train, 20% test**  | Standard practice                              |
+| **Large dataset (>10,000 samples)** | **70% train, 30% test**         | Sufficient training data available             |
 | **Very large dataset (>100,000 samples)** | **60% train, 20% validation, 20% test** | Model tuning and performance evaluation |
+
 
 ### When to Use a Validation Set?
 - If hyperparameter tuning is required, a **third set called validation set** is needed.  
