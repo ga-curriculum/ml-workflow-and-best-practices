@@ -28,29 +28,3 @@ By the end of this lesson, you will be able to:
 | [Challenges in ML Projects](./challenges-in-ml-projects/README.md) | 20 min  | Describe common challenges in machine learning projects and how to address them.|
 | **Total content**                                   | 2 hr 17 min |                                     |
 
-## References
-
-📖 [Reference Materials](./references/README.md)
-
-## Internal
-
-### Prerequisites
-- Quick Refresher to ML
-- Evaluation Metrics for Supervised ML Models
-
-
-### Course landing pages
-
-- [Fallback](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/ml-workflow-and-best-practices/canvas-landing-pages/fallback.html)
-
-### Resources
-
-✏️ [Instructor Guide](./internal-resources/instructor-guide.md)
-
-🎥 [Video Hub](./internal-resources/video-hub.md)
-
-🏗️ [Release Notes](./internal-resources/release-notes.md)
-
----
-
-**Find a 👾 bug 👾 or have suggestions? [Let us know](https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/module-feedback.html)!**
