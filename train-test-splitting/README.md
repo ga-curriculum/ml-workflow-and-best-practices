@@ -64,6 +64,7 @@ print("Testing set size:", X_test.shape)
 
 
 ## Choosing the Right Train-Test Split Ratio
+
 | **Dataset Size** | **Common Train-Test Split Ratio** | **Why?** |
 |---------------|----------------------|----------------------------|
 | **Small dataset (<1,000 samples)** | **90% train, 10% test** | To retain as much training data as possible |
