@@ -33,6 +33,7 @@ courses {
 	  mls.trainTestSplitting
 	  mls.biasVarianceTradeoff
 	  mls.crossValidation
+	  mls.modelMonitoring
 	  mls.challengesInMLProjects
     }
   }

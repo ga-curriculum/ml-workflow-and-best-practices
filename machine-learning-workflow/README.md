@@ -36,7 +36,7 @@ Raw data is often messy, containing missing values, duplicate entries, or incorr
 - **End Outcome:** A clean, structured dataset ready for analysis and model training.  
 
 ### Step 4: Exploratory Data Analysis (EDA) 
-EDA helps in understanding the data distribution, relationships between variables, and patterns that might affect the model’s performance. This step often involves visualizations (histograms, scatter plots, box plots) and statistical summaries (mean, variance, correlations).  
+EDA helps in understanding the data distribution, relationships between variables, and patterns that might affect the model's performance. This step often involves visualizations (histograms, scatter plots, box plots) and statistical summaries (mean, variance, correlations).  
 - **Starting Point:** A preprocessed dataset.  
 - **End Outcome:** Insights into the data, identification of important features, and potential data issues that need further handling.  
 
@@ -56,9 +56,20 @@ A model should generalize well to unseen data. If a model is too simple (high bi
 - **End Outcome:** Adjustments in model complexity to ensure better generalization.  
 
 ### Step 8: Cross-Validation 
-Before deploying a model, it’s crucial to evaluate its performance using metrics like accuracy, precision, recall, RMSE, etc. Cross-validation helps assess how well the model performs on different subsets of the data.  
+Before deploying a model, it's crucial to evaluate its performance using metrics like accuracy, precision, recall, RMSE, etc. Cross-validation helps assess how well the model performs on different subsets of the data.  
 - **Starting Point:** A trained model ready for evaluation.  
 - **End Outcome:** A reliable model with an estimated performance score, ready for deployment or further tuning.
+
+### Step 9: Model Monitoring
+After deployment, continuous monitoring is essential to ensure the model maintains its performance over time and detect any degradation or drift.
+- **Starting Point:** A deployed model in production environment.
+- **End Outcome:** Insights about model performance, detection of potential issues, and triggers for model retraining when necessary.
+
+Key aspects include:
+- Monitoring for model drift (data drift, concept drift, label drift).
+- Tracking performance metrics.
+- Implementing automated alerts.
+- Regular model retraining when needed.
 
 ## 🗣️ Discussion Activity: Understanding the Importance of the ML Workflow
 ### Objective:

@@ -65,6 +65,13 @@ crossValidation = new Template.Microlesson {
   videoUrl = ""
 }
 
+modelMonitoring = new Template.Microlesson {
+  friendlyName = "Model Monitoring"
+  dirName = "model-monitoring"
+  type = "Content"
+  videoUrl = ""
+}
+
 challengesInMLProjects = new Template.Microlesson {
   friendlyName = "Challenges in ML Projects"
   dirName = "challenges-in-ml-projects"

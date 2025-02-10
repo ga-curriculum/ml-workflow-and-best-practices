@@ -201,6 +201,7 @@ Binarizing is an feature engineering technique where continuous numerical data i
 
 - 1 (High Study Hours) → If Hours_Studied is greater than or equal to 5
 - 0 (Low Study Hours) → If Hours_Studied is less than 5
+
 ```python
 # Define the binarization threshold
 threshold = 5
