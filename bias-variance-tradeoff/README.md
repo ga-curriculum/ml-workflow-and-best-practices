@@ -9,12 +9,12 @@
 - A machine learning model's performance using bias-variance tradeoff
 
 ## An Introduction to Bias-Variance Tradeoff
-The bias-variance tradeoff is a fundamental concept in machine learning that describes the balance between underfitting and overfitting. It determines a model’s ability to generalize well to unseen data.
+The bias-variance tradeoff is a fundamental concept in machine learning that describes the balance between underfitting and overfitting. It determines a model's ability to generalize well to unseen data.
 
 ## Bias
 Imagine we are learning to shoot at a target. If we aim without adjusting for the wind and distance, all our shots will land far from the target center. In ML terms, a model with high bias makes simplistic assumptions, resulting in poor performance on both training and test data.
 
-Bias measures how much the model’s predictions differ from the true values due to incorrect assumptions.
+Bias measures how much the model's predictions differ from the true values due to incorrect assumptions.
 High Bias leads to **underfitting (Model is oversimplified)**. Models with high bias: 
 - Lead to poor performance on both training and test datasets.
 - Do not capture complex patterns. 
@@ -28,11 +28,11 @@ For example, Linear Regression algorithms with few features on the dataset usual
 ## Variance
 Again, lets imagine we are learning to shoot at a target. If we over-adjust every time we shoot, considering tiny variations in wind speed and hand movement, our shots will be spread all over the target. In ML terms, model with high variance memorizes the training data instead of learning general patterns, leading to poor test performance.
 
-Variance measures how much the model’s predictions fluctuate for different training datasets. High Variance leads to **overfitting (model is too complex)**. Models with high variance: 
+Variance measures how much the model's predictions fluctuate for different training datasets. High Variance leads to **overfitting (model is too complex)**. Models with high variance: 
 - Demonstrate high accuracy on training data but poor generalization on test data.
 - Capture noise instead of meaningful patterns.
 
-For example, Deep Neural Networks (DNN) with too many layers usually end up in a machine learning model with high variance.
+For example, Deep Learning Architectures with too many layers and complex configurations usually end up in a machine learning model with high variance.
 
 ### How to Reduce Variance
 - Using a simpler model (For example, using Random Forest instead of Deep Neural Network).
