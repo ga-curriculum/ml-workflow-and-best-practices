@@ -30,7 +30,7 @@ Exploratory Data Analysis (EDA) is the process of analyzing datasets to summariz
 
 There's no better way to learn EDA techniques than doing it. For this purpose, lets consider a small dataset containing student performance data:
 | Student_ID | Gender | Math_Score | Reading_Score | Writing_Score | Hours_Studied | Extra_Curricular |
-|:----------:|:------:|:----------:|:-------------:|:-------------:|:-------------:|:----------------:|
+| ---------- | ------ | ---------- | ------------- | ------------- | ------------- | ---------------- |
 | 1          | Male   | 85         | 78            | 80            | 6             | Yes              |
 | 2          | Female | 92         | 88            | 90            | 8             | No               |
 | 3          | Male   | 78         | 74            | 75            | 5             | Yes              |
