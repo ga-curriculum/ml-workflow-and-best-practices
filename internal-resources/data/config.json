@@ -40,38 +40,8 @@
           "estimatedDeliveryTimeInMinutes": 0
         },
         {
-          "friendlyName": "Problem Definition",
+          "friendlyName": "Refresher on Steps 1-4 of the ML Workflow",
           "dirName": "problem-definition",
-          "type": "Content",
-          "skill": "",
-          "learningObjective": "",
-          "videoUrl": "",
-          "videoLengthInMinutes": 0,
-          "estimatedDeliveryTimeInMinutes": 0
-        },
-        {
-          "friendlyName": "Data Collection",
-          "dirName": "data-collection",
-          "type": "Content",
-          "skill": "",
-          "learningObjective": "",
-          "videoUrl": "",
-          "videoLengthInMinutes": 0,
-          "estimatedDeliveryTimeInMinutes": 0
-        },
-        {
-          "friendlyName": "Data Preprocessing",
-          "dirName": "data-preprocessing",
-          "type": "Content",
-          "skill": "",
-          "learningObjective": "",
-          "videoUrl": "",
-          "videoLengthInMinutes": 0,
-          "estimatedDeliveryTimeInMinutes": 0
-        },
-        {
-          "friendlyName": "Exploratory Data Analysis",
-          "dirName": "exploratory-data-analysis",
           "type": "Content",
           "skill": "",
           "learningObjective": "",
