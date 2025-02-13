@@ -27,9 +27,6 @@ courses {
       mls.setup
       mls.machineLearningWorkflow
       mls.problemDefinition
-	  mls.dataCollection
-	  mls.dataPreprocessing
-	  mls.exploratoryDataAnalysis
 	  mls.trainTestSplitting
 	  mls.biasVarianceTradeoff
 	  mls.crossValidation
