@@ -35,7 +35,7 @@ A successful ML solution starts by aligning with a clear business goal.
 
 * * * * *
 
-Step 2: [Data Collection](https://git.generalassemb.ly/modular-curriculum-all-courses/ml-workflow-and-best-practices/blob/main/additional-resources/data-collection/README.md) -- **Gather the Right Fuel**
+Step 2: Data Collection -- **Gather the Right Fuel**
 ---------------------------------------------------
 
 Your model is only as good as the data you feed it.
@@ -53,7 +53,7 @@ Your model is only as good as the data you feed it.
 
 * * * * *
 
-Step 3: [Data Preprocessing](https://git.generalassemb.ly/modular-curriculum-all-courses/ml-workflow-and-best-practices/tree/main/additional-resources/data-preprocessing) -- **Clean and Prepare the Data**
+Step 3: Data Preprocessing -- **Clean and Prepare the Data**
 -----------------------------------------------------------
 
 Real-world data is messy. You need to shape it into a usable form.
@@ -70,7 +70,7 @@ Real-world data is messy. You need to shape it into a usable form.
 
 * * * * *
 
-Step 4: [Exploratory Data Analysis (EDA)](https://git.generalassemb.ly/modular-curriculum-all-courses/ml-workflow-and-best-practices/tree/main/additional-resources/exploratory-data-analysis) -- **Understand the Data**
+Step 4: Exploratory Data Analysis (EDA) -- **Understand the Data**
 -----------------------------------------------------------------
 
 EDA helps you uncover patterns, relationships, and issues before modeling.
