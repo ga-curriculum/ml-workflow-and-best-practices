@@ -1,31 +1,86 @@
-import "https://pages.git.generalassemb.ly/modular-curriculum-all-courses/universal-resources-internal/static/v2/pkl/template.pkl" as Template
-
-// Add microlessons here, in the order they should be delivered
-
-setup = new Template.Microlesson {
-  friendlyName = "Setup"
-  dirName = "setup"
-  type = "Setup"
-  videoUrl = ""
-}
-
-microlesson01 = new Template.Microlesson {
-  friendlyName = "ML Workflow & Problem Definition"
-  dirName = "machine-learning-workflow-problem-definition"
-  type = "Content"
-  videoUrl = ""
-}
-
-microlesson02 = new Template.Microlesson {
-  friendlyName = "Data Splitting & Model Validation"
-  dirName = "data-splitting-model-validation"
-  type = "Content"
-  videoUrl = ""
-}
-
-microlesson03 = new Template.Microlesson {
-  friendlyName = "Bias-Variance & Model Performance"
-  dirName = "bias-variance-model-performance"
-  type = "Content"
-  videoUrl = ""
+{
+  "org": {
+    "friendlyName": "Modular Curriculum All Courses",
+    "name": "modular-curriculum-all-courses"
+  },
+  "repo": {
+    "friendlyName": "ML Workflow and Best Practices",
+    "name": "ml-workflow-and-best-practices",
+    "type": "Lesson",
+    "about": "",
+    "starterCode": "",
+    "solutionCode": "",
+    "deployedSite": ""
+  },
+  "courses": [
+    {
+      "name": "fallback",
+      "courseAcronym": "",
+      "courseFullName": "",
+      "logoUrl": "",
+      "microlessons": [
+        {
+          "friendlyName": "Setup",
+          "dirName": "setup",
+          "type": "Setup",
+          "skill": "",
+          "learningObjective": "",
+          "videoUrl": "",
+          "videoLengthInMinutes": 0,
+          "estimatedDeliveryTimeInMinutes": 2
+        },
+        {
+          "friendlyName": "ML Workflow & Problem Definition",
+          "dirName": "machine-learning-workflow-problem-definition",
+          "type": "Content",
+          "skill": "",
+          "learningObjective": "",
+          "videoUrl": "",
+          "videoLengthInMinutes": 0,
+          "estimatedDeliveryTimeInMinutes": 30
+        },
+        {
+          "friendlyName": "Data Splitting & Model Validation",
+          "dirName": "data-splitting-model-validation",
+          "type": "Content",
+          "skill": "",
+          "learningObjective": "",
+          "videoUrl": "",
+          "videoLengthInMinutes": 0,
+          "estimatedDeliveryTimeInMinutes": 30
+        },
+        {
+          "friendlyName": "Bias-Variance & Model Performance",
+          "dirName": "train-test-splitting",
+          "type": "Content",
+          "skill": "",
+          "learningObjective": "",
+          "videoUrl": "",
+          "videoLengthInMinutes": 0,
+          "estimatedDeliveryTimeInMinutes": 30
+        }
+      ],
+      "isHeaderShown": true,
+      "isHeaderModuleNavShown": true,
+      "isHeaderHomeNavShown": true,
+      "isHeaderMicrolessonNavShown": true,
+      "isHeaderMicrolessonVideoLinkShown": true,
+      "isHeaderNavSettingsShown": true,
+      "isFooterCopyrightShown": true,
+      "isFooterLessonNavShown": true,
+      "isStickyNavSettingShown": true,
+      "isStickyNavAllowed": true,
+      "isFixedNavAllowed": true,
+      "isStickyNavDefault": true,
+      "isStickyNavForcedDefault": false,
+      "isFixedNavForcedDefault": false,
+      "isDarkModeSettingShown": true,
+      "isDarkModeAllowed": true,
+      "isLightModeAllowed": true,
+      "isLightModeDefault": true,
+      "isLightModeForcedDefault": false,
+      "isDarkModeForcedDefault": false,
+      "isActivityTimeShown": true
+    }
+  ]
 }
