@@ -59,13 +59,12 @@ When training a machine learning model, we must ensure that it generalizes well 
 -   **Validation Set** (optional) -- Used for hyperparameter tuning.
 -   **Test Set** -- Used to evaluate the model's final performance.
 
-```mermaid
+    <div class="mermaid">
 graph LR;
     A[Full Dataset] -->|80%| B[Training Set];
     A -->|20%| C[Test Set];
     B -->|Split again - *optional*| D[Validation Set];
-
-```
+    </div>
 
 ### **2\. Implementing Train-Test Split**
 
@@ -95,7 +94,7 @@ Cross-validation (CV) is a more **robust method** than a simple train-test split
 -   **Stratified K-Fold** -- Ensures that class distributions remain balanced across folds.
 -   **Leave-One-Out Cross-Validation (LOOCV)** -- Uses all but one data point for training in each iteration.
 
-```mermaid
+<div class="mermaid">
 graph TD;
     A[Dataset] -->|Split into K subsets| B1[Fold 1] & B2[Fold 2] & B3[Fold 3] & B4[Fold 4] & B5[Fold 5];
     B1 -->|Train on Folds 2-5, Test on Fold 1| C1[Model Performance];
@@ -104,8 +103,8 @@ graph TD;
     B4 -->|Train on Folds 1,2,3,5, Test on Fold 4| C4[Model Performance];
     B5 -->|Train on Folds 1-4, Test on Fold 5| C5[Model Performance];
     C1 & C2 & C3 & C4 & C5 -->|Aggregate Scores| D[Final Model Performance];
+</div>
 
-```
 
 **Example Code:**
 

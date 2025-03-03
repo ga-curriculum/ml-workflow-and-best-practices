@@ -24,6 +24,6 @@ By the end of this module, students will be able to:
 | [Setup](./setup/README.md)                          | 2 min | Set up the development environment. |
 | [ML Workflow & Problem Definition](./machine-learning-workflow-problem-definition/README.md) | 30 min  | List and explain the steps in the machine learning workflow.|
 | [Data Splitting & Model Validation](./data-splitting-model-validation/README.md) | 30 min  | Identify and define a problem that needs to be addressed using a machine learning solution.|
-| [Bias-Variance & Model Performance](./train-test-splitting/README.md) | 30 min  | Evaluate a model using train-test splitting technique.|
+| [Bias-Variance & Model Performance](./bias-variance-model-performance/README.md) | 30 min  | Evaluate a model using train-test splitting technique.|
 | **Total content**                                   | ~90 min |                                     |
 

@@ -30,14 +30,13 @@ Bias and variance are two key sources of error in machine learning models:
 -   **High Variance (Overfitting):** Model learns noise instead of underlying patterns, performing well on training data but poorly on new data.
 -   **Optimal Tradeoff:** Achieved when the model generalizes well without overfitting.
 
-```mermaid
+<div class="mermaid">
 graph LR;
     A[Total Error] -->|Bias Component| B[Underfitting];
     A -->|Variance Component| C[Overfitting];
     B -->|Increase Complexity| D[Optimal Model];
     C -->|Reduce Complexity| D;
-
-```
+</div>
 
 **2\. Identifying Overfitting and Underfitting**
 ------------------------------------------------
@@ -52,12 +51,11 @@ graph LR;
 
 ### **Visualization of Bias-Variance Tradeoff**
 
-```mermaid
+<div class="mermaid">
 graph TD;
     A[High Bias] -->|Increase Model Complexity| B[Balanced Model];
     B -->|Increase Further| C[High Variance];
-
-```
+</div>
 
 **3\. Regularization Techniques**
 ---------------------------------
