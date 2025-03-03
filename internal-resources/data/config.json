@@ -25,7 +25,7 @@ microlesson02 = new Template.Microlesson {
 
 microlesson03 = new Template.Microlesson {
   friendlyName = "Bias-Variance & Model Performance"
-  dirName = "train-test-splitting"
+  dirName = "bias-variance-model-performance"
   type = "Content"
   videoUrl = ""
 }

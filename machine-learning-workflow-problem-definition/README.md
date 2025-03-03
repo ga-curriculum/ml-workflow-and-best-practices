@@ -28,7 +28,7 @@ A typical ML workflow consists of the following stages:
 -   **Evaluation & Validation** - Measure model performance using appropriate metrics.
 -   **Deployment & Monitoring** - Deploy and continuously monitor model performance.
 
-```mermaid
+<div class="mermaid">
 graph TD;
     A[Problem Definition] --> B[Data Collection];
     B --> C[Exploratory Data Analysis];
@@ -37,8 +37,7 @@ graph TD;
     E --> F[Evaluation & Validation];
     F --> G[Deployment & Monitoring];
     G -->|Feedback Loop| A;
-
-```
+</div>
 
 ### **2\. Framing an ML Problem**
 
@@ -52,15 +51,14 @@ The success of an ML project hinges on how well the problem is defined. Poorly f
 4.  **Assess Data Availability & Constraints** - Do we have enough data? Is it labeled? Are there ethical considerations?
 5.  **Define Baselines** - What is the current performance without ML? (e.g., rule-based systems, human decision-making).
 
-```mermaid
+<div class="mermaid">
 graph LR;
     A[Business Objective] --> B[Identify ML Task];
     B --> C[Determine Success Metrics];
     C --> D[Assess Data Availability];
     D --> E[Define Baselines];
     E -->|Final ML Problem Statement| F[Proceed to Data Collection];
-
-```
+</div>
 
 ### **3\. Common Challenges in ML Projects**
 
