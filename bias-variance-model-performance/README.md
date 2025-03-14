@@ -21,7 +21,7 @@ Overview
 
 A well-performing machine learning model strikes a balance between **bias** (error from overly simplistic assumptions) and **variance** (error from excessive sensitivity to training data). This lesson explores how to diagnose and manage these issues.
 
-**1\. Understanding the Bias-Variance Tradeoff**
+**Understanding the Bias-Variance Tradeoff**
 ------------------------------------------------
 
 Bias and variance are two key sources of error in machine learning models:
@@ -38,7 +38,7 @@ graph LR;
     C -->|Reduce Complexity| D;
 </div>
 
-**2\. Identifying Overfitting and Underfitting**
+**Identifying Overfitting and Underfitting**
 ------------------------------------------------
 
 ### **Symptoms:**
@@ -57,7 +57,7 @@ graph TD;
     B -->|Increase Further| C[High Variance];
 </div>
 
-**3\. Regularization Techniques**
+**Regularization Techniques**
 ---------------------------------
 
 Regularization helps control model complexity and prevents overfitting:
@@ -92,7 +92,7 @@ print("Lasso MSE:", mean_squared_error(y_test, lasso_pred))
 
 ```
 
-**4\. Evaluating Model Performance**
+**Evaluating Model Performance**
 ------------------------------------
 
 Model evaluation metrics help assess generalization:
