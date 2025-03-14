@@ -51,7 +51,7 @@
         },
         {
           "friendlyName": "Bias-Variance & Model Performance",
-          "dirName": "train-test-splitting",
+          "dirName": "bias-variance-model-performance",
           "type": "Content",
           "skill": "",
           "learningObjective": "",
