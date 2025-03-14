@@ -51,7 +51,7 @@ print(df.head())
 
 * * * * *
 
-### **1\. The Need for Data Splitting**
+### **The Need for Data Splitting**
 
 When training a machine learning model, we must ensure that it generalizes well to unseen data. This requires **dividing our dataset** into subsets:
 
@@ -66,7 +66,7 @@ graph LR;
     B -->|Split again - *optional*| D[Validation Set];
     </div>
 
-### **2\. Implementing Train-Test Split**
+### **Implementing Train-Test Split**
 
 A **train-test split** is the simplest way to evaluate a model. It ensures that the model does not memorize the training data but generalizes to unseen examples.
 
@@ -84,7 +84,7 @@ print(f"Testing Data Shape: {test_data.shape}")
 
 ```
 
-### **3\. Understanding Cross-Validation**
+### **Understanding Cross-Validation**
 
 Cross-validation (CV) is a more **robust method** than a simple train-test split, as it helps mitigate variance in performance evaluation.
 
@@ -123,7 +123,7 @@ print("Mean CV Score:", scores.mean())
 
 ```
 
-### **4\. Choosing the Right Validation Approach**
+### **Choosing the Right Validation Approach**
 
 | Validation Method | Pros | Cons |
 | --- | --- | --- |
