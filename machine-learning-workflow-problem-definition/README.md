@@ -16,7 +16,7 @@ By the end of this lesson, you will be able to:
 
 ---------------
 
-### **1\. The Machine Learning Workflow**
+### **The Machine Learning Workflow**
 
 A typical ML workflow consists of the following stages:
 
@@ -39,7 +39,7 @@ graph TD;
     G -->|Feedback Loop| A;
 </div>
 
-### **2\. Framing an ML Problem**
+### **Framing an ML Problem**
 
 The success of an ML project hinges on how well the problem is defined. Poorly framed problems often lead to ineffective solutions.
 
@@ -60,7 +60,7 @@ graph LR;
     E -->|Final ML Problem Statement| F[Proceed to Data Collection];
 </div>
 
-### **3\. Common Challenges in ML Projects**
+### **3Common Challenges in ML Projects**
 
 -   **Data Issues:** Missing, biased, or insufficient data.
 -   **Feature Engineering Complexity:** Selecting the right features impacts model performance significantly.
