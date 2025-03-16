@@ -3,7 +3,7 @@
   <span class="subhead">Setup</span>
 </h1>
 
-## Environment Setup
+## Setup
 
 Before starting the lessons, you'll need to set up your Python environment with the necessary packages. Follow these steps in your terminal:
 
