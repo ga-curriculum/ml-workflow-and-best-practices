@@ -7,32 +7,17 @@
 
 Before starting the lessons, you'll need to set up your Python environment with the necessary packages. Follow these steps in your terminal:
 
-1. **Ensure Python is Installed**
+1. **Create and Activate a Virtual Environment**
 
    ```sh
-   python --version  # Should be Python 3.8 or higher
-   ```
-
-   If Python is not installed, download it from [python.org](https://python.org)
-
-2. **Create and Activate a Virtual Environment**
-
-   ```sh
-
    python -m venv env
    source env/bin/activate
-
    ```
 
-3. **Install Required Packages**
+2. **Install Required Packages**
 
    ```sh
    pip install jupyter numpy pandas scikit-learn matplotlib seaborn
-   ```
-
-4. **Verify Installation**
-   ```sh
-   python -c "import numpy; import pandas; import sklearn; import matplotlib; import seaborn; print('All packages installed successfully!')"
    ```
 
 ## Jupyter Notebook Setup
