@@ -60,7 +60,7 @@ graph LR;
     E -->|Final ML Problem Statement| F[Proceed to Data Collection];
 </div>
 
-### **3Common Challenges in ML Projects**
+### **Common Challenges in ML Projects**
 
 -   **Data Issues:** Missing, biased, or insufficient data.
 -   **Feature Engineering Complexity:** Selecting the right features impacts model performance significantly.
