@@ -9,19 +9,19 @@ Learning Objectives
 
 By the end of this lesson, you will be able to:
 
--   Define the machine learning (ML) workflow and its key stages.
--   Identify the essential steps for framing an ML problem.
+-   Describe the key stages of the machine learning (ML) workflow.
+-   Explain the essential steps for framing an ML problem.
 -   Align ML problem definitions with specific business objectives.
--   Recognize common challenges in ML projects and how to address them.
+-   Identify common challenges in ML projects and strategies to address them.
 
 ---------------
 
 ### **The Machine Learning Workflow**
 
-A typical ML workflow consists of the following stages:
+A typical machine learning workflow follows a structured sequence of stages, from defining the problem to deploying and monitoring the model in production.:
 
 -   **Problem Definition & Business Understanding** - Define the goal, constraints, and success criteria.
--   **Data Collection & Preprocessing** - Gather and clean data for modeling.
+-   **Data Collection & Preprocessing** - Gather, clean, and prepare data for modeling.
 -   **Exploratory Data Analysis (EDA)** - Understand the dataset through statistics and visualizations.
 -   **Feature Engineering** - Select and transform relevant features for better model performance.
 -   **Model Selection & Training** - Choose and train an appropriate model.
@@ -46,9 +46,9 @@ The success of an ML project hinges on how well the problem is defined. Poorly f
 **Key Steps to Define an ML Problem:**
 
 1.  **Understand Business Objectives** - What is the end goal? (e.g., increasing revenue, reducing churn, automating tasks).
-2.  **Identify the ML Task** - Is it a classification, regression, clustering, or recommendation problem?
+2.  **Identify the ML Task** - Is the problem best framed as classification, regression, clustering, or recommendation?
 3.  **Determine Success Metrics** - What defines a "good" model? (e.g., accuracy, precision-recall, RMSE, F1-score).
-4.  **Assess Data Availability & Constraints** - Do we have enough data? Is it labeled? Are there ethical considerations?
+4.  **Assess Data Availability & Constraints** - Is sufficient data available? Is it labeled? Are there ethical, privacy, or regulatory considerations?
 5.  **Define Baselines** - What is the current performance without ML? (e.g., rule-based systems, human decision-making).
 
 <div class="mermaid">
@@ -64,8 +64,8 @@ graph LR;
 
 -   **Data Issues:** Missing, biased, or insufficient data.
 -   **Feature Engineering Complexity:** Selecting the right features impacts model performance significantly.
--   **Model Generalization:** Avoiding overfitting or underfitting.
--   **Business Misalignment:** ML solutions that don't address the real business problem.
+-   **Model Generalization:** Ensuring the model performs well on unseen data (avoiding overfitting or underfitting).
+-   **Business Misalignment:** Solutions that optimize technical metrics but fail to address real business needs.
 -   **Deployment Bottlenecks:** Moving from a prototype to production can be challenging.
 
 **Group Discussion**
@@ -88,7 +88,7 @@ Using Python, explore a small dataset and determine an appropriate ML problem st
 1.  Load a dataset (e.g., customer purchase history, loan applications).
 2.  Analyze key features using Pandas.
 3.  Determine if the problem is classification, regression, or clustering.
-4.  Print a structured ML problem statement.
+4.  Generate a clear, structured ML problem statement.
 
 **Example Code:**
 
@@ -112,7 +112,7 @@ if 'survived' in df.columns:
 **Key Takeaways**
 -----------------
 
--   A well-defined ML problem is crucial for project success.
+-   A well-defined ML problem is problem is foundational to project success.
 -   Aligning ML solutions with business objectives ensures practical impact.
--   Understanding data constraints early helps mitigate risks.
--   Framing the problem correctly leads to better model performance and deployment outcomes.
+-   Identifying data constraints early helps mitigate technical and ethical risks.
+-   Clear problem framing leads to better model performance and smoother deployment.
