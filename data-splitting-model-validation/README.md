@@ -14,12 +14,11 @@ By the end of this lesson, you will be able to:
 -   Understand the importance of data splitting in ML workflows.
 -   Implement train-test splits and cross-validation techniques.
 -   Compare different model validation approaches and their trade-offs.
--   Evaluate models effectively using appropriate performance metrics.
-
+-   Assess model performance using appropriate evaluation metrics.
 Overview
 ---------------
 
-A well-validated model ensures reliable performance in real-world scenarios. This lesson focuses on how to **split data correctly** and apply **validation techniques** to prevent overfitting and underfitting.
+Proper model validation is essential for ensuring reliable performance in real-world scenarios. This lesson focuses on how to **split data** correctly and apply **validation techniques** to reduce overfitting and underfitting.
 
 **Iris Flower Dataset**
 ---------------------------------------
@@ -53,7 +52,7 @@ print(df.head())
 
 ### **The Need for Data Splitting**
 
-When training a machine learning model, we must ensure that it generalizes well to unseen data. This requires **dividing our dataset** into subsets:
+When training a machine learning model, it is critical to evaluate how well it generalizes to unseen data. This requires **dividing our dataset** into distint subsets:
 
 -   **Training Set** -- Used to train the model.
 -   **Validation Set** (optional) -- Used for hyperparameter tuning.
@@ -68,7 +67,7 @@ graph LR;
 
 ### **Implementing Train-Test Split**
 
-A **train-test split** is the simplest way to evaluate a model. It ensures that the model does not memorize the training data but generalizes to unseen examples.
+A **train-test split** is the simplest way to evaluate a model. It ensures that models learn general patterns rather than memorizing training data.
 
 **Example Code:**
 
@@ -86,7 +85,7 @@ print(f"Testing Data Shape: {test_data.shape}")
 
 ### **Understanding Cross-Validation**
 
-Cross-validation (CV) is a more **robust method** than a simple train-test split, as it helps mitigate variance in performance evaluation.
+Cross-validation (CV) is a more **robust evaluation approach** than a simple train-test split by reducing performance variability caused by random sampling.
 
 **Types of Cross-Validation:**
 
@@ -144,5 +143,5 @@ print("Mean CV Score:", scores.mean())
 -----------------
 
 -   **Train-test splits** prevent data leakage and help estimate model performance.
--   **Cross-validation** is a more reliable method for evaluation, reducing the impact of random splits.
--   Choosing the right validation approach depends on dataset size, model complexity, and computational constraints.
+-   **Cross-validation** provides a more reliable performance estimate by minimizing variance from random splits.
+-   The optimal validation strategy depends on dataset size, model complexity, and computational constraints.
