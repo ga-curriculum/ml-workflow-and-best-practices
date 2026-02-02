@@ -11,11 +11,11 @@ This module covers the **end-to-end machine learning (ML) workflow and best prac
 
 By the end of this module, students will be able to:
 
-- Define the ML workflow and its key components.
-- Frame machine learning problems aligned with business objectives.
+- Describe the key stages of the machine learning workflow.
+- Frame machine learning problems in alignment with business objectives.
 - Apply data splitting and validation techniques to improve model reliability.
 - Understand and mitigate the bias-variance tradeoff.
-- Use best practices for model evaluation and monitoring.
+- Use best practices for model evaluation and ongoing monitoring.
  
 ## Content
 
