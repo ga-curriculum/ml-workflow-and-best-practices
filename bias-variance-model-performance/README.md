@@ -12,14 +12,14 @@ Learning Objectives
 By the end of this lesson, you will be able to:
 
 -   Understand the bias-variance tradeoff and its impact on model performance.
--   Identify overfitting and underfitting in machine learning models.
+-   Diagnose overfitting and underfitting in machine learning models.
 -   Apply regularization techniques to improve generalization.
--   Use performance metrics to evaluate model effectiveness.
+-   Evaluate performance metrics to evaluate model effectiveness.
 
 Overview
 ---------------
 
-A well-performing machine learning model strikes a balance between **bias** (error from overly simplistic assumptions) and **variance** (error from excessive sensitivity to training data). This lesson explores how to diagnose and manage these issues.
+A well-performing machine learning model balances **bias** (error from overly simplistic assumptions) and **variance** (error from excessive sensitivity to training data). This lesson explores how to diagnose and manage these issues.
 
 **Understanding the Bias-Variance Tradeoff**
 ------------------------------------------------
@@ -27,7 +27,7 @@ A well-performing machine learning model strikes a balance between **bias** (err
 Bias and variance are two key sources of error in machine learning models:
 
 -   **High Bias (Underfitting):** Model is too simple, failing to capture patterns in the data.
--   **High Variance (Overfitting):** Model learns noise instead of underlying patterns, performing well on training data but poorly on new data.
+-   **High Variance (Overfitting):** Model captures noise instead of underlying patterns, performing well on training data but poorly on unseen data.
 -   **Optimal Tradeoff:** Achieved when the model generalizes well without overfitting.
 
 <div class="mermaid">
@@ -62,9 +62,9 @@ graph TD;
 
 Regularization helps control model complexity and prevents overfitting:
 
--   **L1 Regularization (Lasso):** Shrinks some feature coefficients to zero, performing feature selection.
+-   **L1 Regularization (Lasso):** Encourages sparsity by shrinking some coefficients to zero, effectively performing feature selection.
 -   **L2 Regularization (Ridge):** Penalizes large coefficients, encouraging smaller, more generalizable weights.
--   **Dropout (Neural Networks):** Randomly drops neurons during training to prevent dependency on specific patterns.
+-   **Dropout (Neural Networks):** Randomly drops neurons during training to reduce reliance on specific features.
 
 **Example Code: Ridge vs. Lasso Regression**
 
@@ -141,4 +141,4 @@ In real-world ML applications:
 -   **Bias-variance tradeoff** is crucial for optimizing model performance.
 -   **Regularization techniques** help control model complexity.
 -   **Evaluation metrics** provide insights into model effectiveness.
--   **Choosing the right balance** ensures models generalize well without overfitting or underfitting.
+-   **Selecting the right balance** ensures models generalize well without overfitting or underfitting.
